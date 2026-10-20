@@ -1344,7 +1344,7 @@ class OllamaProvider(BaseProvider):
 
 class DeepSeekProvider(BaseProvider):
     def __init__(
-        self, api_key: Optional[str] = None, model: str = "deepseek-chat", **kwargs
+        self, api_key: Optional[str] = None, model: str = "deepseek-flash", **kwargs
     ):
         super().__init__(**kwargs)
         self.api_key = api_key or config.get_api_key("deepseek")

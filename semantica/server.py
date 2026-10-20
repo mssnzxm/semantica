@@ -37,6 +37,35 @@ setup_logging()
 
 STATIC_DIR = Path(__file__).parent / "static"
 
+
+def _load_agent_memory():
+    """Load an AgentMemory instance when SEMANTICA_AGENT_MEMORY_PATH is set.
+
+    The variable points at a directory; state is persisted to
+    ``<dir>/agent_memory.json`` so memories survive restarts.
+    """
+    if not EXPLORER_AVAILABLE:
+        return None
+    memory_dir = os.getenv("SEMANTICA_AGENT_MEMORY_PATH")
+    if not memory_dir:
+        return None
+    try:
+        from .context.agent_memory import AgentMemory
+
+        directory = Path(memory_dir)
+        directory.mkdir(parents=True, exist_ok=True)
+        memory = AgentMemory()
+        if (directory / "agent_memory.json").is_file():
+            memory.load(str(directory))
+            logging.info(f"Agent memory loaded from {directory}")
+        else:
+            logging.info(f"Agent memory initialized (new) at {directory}")
+        return memory
+    except Exception as exc:  # noqa: BLE001
+        logging.error(f"Failed to initialize agent memory: {exc}")
+        return None
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Lifecycle manager for startup and shutdown events."""
@@ -61,7 +90,7 @@ async def lifespan(app: FastAPI):
             app.state.session = GraphSession(graph)
             app.state.ws_manager = ConnectionManager()
             app.state.event_loop = asyncio.get_running_loop()
-            app.state.agent_memory = None
+            app.state.agent_memory = _load_agent_memory()
             app.state.markdown_resources = MarkdownResourceRegistry(graph)
             install_mutation_bridge(app, app.state.session)
             logging.info("Database Session and WebSockets attached to app state.")

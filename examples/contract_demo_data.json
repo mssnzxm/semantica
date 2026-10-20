@@ -1,0 +1,5619 @@
+{
+  "nodes": [
+    {
+      "id": "company-01",
+      "type": "Company",
+      "properties": {
+        "label": "上海云启科技有限公司",
+        "content": "上海云启科技有限公司（信息技术行业，注册资本 8000 万元，住所地：中国（上海）自由贸易试验区世纪大道 88 号）",
+        "industry": "信息技术",
+        "registered_capital_wan": 8000,
+        "address": "中国（上海）自由贸易试验区世纪大道 88 号",
+        "unified_credit_code": "9131000101MA911848K"
+      }
+    },
+    {
+      "id": "company-02",
+      "type": "Company",
+      "properties": {
+        "label": "北京华信数联科技股份有限公司",
+        "content": "北京华信数联科技股份有限公司（信息技术行业，注册资本 12000 万元，住所地：北京市海淀区中关村软件园 3 号楼）",
+        "industry": "信息技术",
+        "registered_capital_wan": 12000,
+        "address": "北京市海淀区中关村软件园 3 号楼",
+        "unified_credit_code": "9131000102MA582049K"
+      }
+    },
+    {
+      "id": "company-03",
+      "type": "Company",
+      "properties": {
+        "label": "深圳市前海智能装备有限公司",
+        "content": "深圳市前海智能装备有限公司（智能制造行业，注册资本 15000 万元，住所地：深圳市南山区前海深港合作区 6 号）",
+        "industry": "智能制造",
+        "registered_capital_wan": 15000,
+        "address": "深圳市南山区前海深港合作区 6 号",
+        "unified_credit_code": "9131000103MA881347K"
+      }
+    },
+    {
+      "id": "company-04",
+      "type": "Company",
+      "properties": {
+        "label": "杭州矩阵数据服务有限公司",
+        "content": "杭州矩阵数据服务有限公司（数据服务行业，注册资本 3000 万元，住所地：杭州市余杭区未来科技城 12 幢）",
+        "industry": "数据服务",
+        "registered_capital_wan": 3000,
+        "address": "杭州市余杭区未来科技城 12 幢",
+        "unified_credit_code": "9131000104MA783500K"
+      }
+    },
+    {
+      "id": "company-05",
+      "type": "Company",
+      "properties": {
+        "label": "广州启明贸易发展有限公司",
+        "content": "广州启明贸易发展有限公司（国际贸易行业，注册资本 5000 万元，住所地：广州市天河区珠江新城华夏路 20 号）",
+        "industry": "国际贸易",
+        "registered_capital_wan": 5000,
+        "address": "广州市天河区珠江新城华夏路 20 号",
+        "unified_credit_code": "9131000105MA957772K"
+      }
+    },
+    {
+      "id": "company-06",
+      "type": "Company",
+      "properties": {
+        "label": "成都天府软件系统集成有限公司",
+        "content": "成都天府软件系统集成有限公司（软件集成行业，注册资本 2500 万元，住所地：成都市高新区天府大道北段 1700 号）",
+        "industry": "软件集成",
+        "registered_capital_wan": 2500,
+        "address": "成都市高新区天府大道北段 1700 号",
+        "unified_credit_code": "9131000106MA428962K"
+      }
+    },
+    {
+      "id": "company-07",
+      "type": "Company",
+      "properties": {
+        "label": "武汉光谷通信设备有限公司",
+        "content": "武汉光谷通信设备有限公司（通信设备行业，注册资本 9000 万元，住所地：武汉市东湖高新区光谷大道 77 号）",
+        "industry": "通信设备",
+        "registered_capital_wan": 9000,
+        "address": "武汉市东湖高新区光谷大道 77 号",
+        "unified_credit_code": "9131000107MA322955K"
+      }
+    },
+    {
+      "id": "company-08",
+      "type": "Company",
+      "properties": {
+        "label": "江苏金陵精密制造有限公司",
+        "content": "江苏金陵精密制造有限公司（精密制造行业，注册资本 20000 万元，住所地：南京市江宁区苏源大道 98 号）",
+        "industry": "精密制造",
+        "registered_capital_wan": 20000,
+        "address": "南京市江宁区苏源大道 98 号",
+        "unified_credit_code": "9131000108MA604759K"
+      }
+    },
+    {
+      "id": "company-09",
+      "type": "Company",
+      "properties": {
+        "label": "浙江钱塘供应链管理有限公司",
+        "content": "浙江钱塘供应链管理有限公司（供应链管理行业，注册资本 4000 万元，住所地：杭州市钱塘新区义蓬街道 6 号街）",
+        "industry": "供应链管理",
+        "registered_capital_wan": 4000,
+        "address": "杭州市钱塘新区义蓬街道 6 号街",
+        "unified_credit_code": "9131000109MA165393K"
+      }
+    },
+    {
+      "id": "company-10",
+      "type": "Company",
+      "properties": {
+        "label": "重庆山城建设工程有限公司",
+        "content": "重庆山城建设工程有限公司（建筑工程行业，注册资本 18000 万元，住所地：重庆市渝北区财富大道 5 号）",
+        "industry": "建筑工程",
+        "registered_capital_wan": 18000,
+        "address": "重庆市渝北区财富大道 5 号",
+        "unified_credit_code": "9131000110MA782366K"
+      }
+    },
+    {
+      "id": "company-11",
+      "type": "Company",
+      "properties": {
+        "label": "西安丝路新能源科技有限公司",
+        "content": "西安丝路新能源科技有限公司（新能源行业，注册资本 10000 万元，住所地：西安市高新区锦业路 1 号）",
+        "industry": "新能源",
+        "registered_capital_wan": 10000,
+        "address": "西安市高新区锦业路 1 号",
+        "unified_credit_code": "9131000111MA934431K"
+      }
+    },
+    {
+      "id": "company-12",
+      "type": "Company",
+      "properties": {
+        "label": "青岛海滨航运物流有限公司",
+        "content": "青岛海滨航运物流有限公司（航运物流行业，注册资本 7000 万元，住所地：青岛市市南区香港中路 52 号）",
+        "industry": "航运物流",
+        "registered_capital_wan": 7000,
+        "address": "青岛市市南区香港中路 52 号",
+        "unified_credit_code": "9131000112MA619263K"
+      }
+    },
+    {
+      "id": "company-13",
+      "type": "Company",
+      "properties": {
+        "label": "天津渤海化工集团",
+        "content": "天津渤海化工集团（化工行业，注册资本 50000 万元，住所地：天津市滨海新区第二大街 41 号）",
+        "industry": "化工",
+        "registered_capital_wan": 50000,
+        "address": "天津市滨海新区第二大街 41 号",
+        "unified_credit_code": "9131000113MA185837K"
+      }
+    },
+    {
+      "id": "company-14",
+      "type": "Company",
+      "properties": {
+        "label": "长沙潇湘传媒文化有限公司",
+        "content": "长沙潇湘传媒文化有限公司（文化传媒行业，注册资本 1500 万元，住所地：长沙市岳麓区麓谷大道 658 号）",
+        "industry": "文化传媒",
+        "registered_capital_wan": 1500,
+        "address": "长沙市岳麓区麓谷大道 658 号",
+        "unified_credit_code": "9131000114MA255214K"
+      }
+    },
+    {
+      "id": "company-15",
+      "type": "Company",
+      "properties": {
+        "label": "南京紫金山电子科技有限公司",
+        "content": "南京紫金山电子科技有限公司（电子科技行业，注册资本 6000 万元，住所地：南京市玄武区紫金山路 9 号）",
+        "industry": "电子科技",
+        "registered_capital_wan": 6000,
+        "address": "南京市玄武区紫金山路 9 号",
+        "unified_credit_code": "9131000115MA133569K"
+      }
+    },
+    {
+      "id": "company-16",
+      "type": "Company",
+      "properties": {
+        "label": "福州闽江金融服务有限公司",
+        "content": "福州闽江金融服务有限公司（金融服务行业，注册资本 22000 万元，住所地：福州市鼓楼区五四路 128 号）",
+        "industry": "金融服务",
+        "registered_capital_wan": 22000,
+        "address": "福州市鼓楼区五四路 128 号",
+        "unified_credit_code": "9131000116MA438209K"
+      }
+    },
+    {
+      "id": "company-17",
+      "type": "Company",
+      "properties": {
+        "label": "郑州中原物流仓储有限公司",
+        "content": "郑州中原物流仓储有限公司（物流仓储行业，注册资本 3600 万元，住所地：郑州市郑东新区商都路 100 号）",
+        "industry": "物流仓储",
+        "registered_capital_wan": 3600,
+        "address": "郑州市郑东新区商都路 100 号",
+        "unified_credit_code": "9131000117MA633055K"
+      }
+    },
+    {
+      "id": "company-18",
+      "type": "Company",
+      "properties": {
+        "label": "苏州园林建筑装饰工程有限公司",
+        "content": "苏州园林建筑装饰工程有限公司（建筑装饰行业，注册资本 5200 万元，住所地：苏州市姑苏区干将西路 456 号）",
+        "industry": "建筑装饰",
+        "registered_capital_wan": 5200,
+        "address": "苏州市姑苏区干将西路 456 号",
+        "unified_credit_code": "9131000118MA313502K"
+      }
+    },
+    {
+      "id": "company-19",
+      "type": "Company",
+      "properties": {
+        "label": "昆明彩云国际贸易有限公司",
+        "content": "昆明彩云国际贸易有限公司（国际贸易行业，注册资本 2000 万元，住所地：昆明市官渡区春城路 289 号）",
+        "industry": "国际贸易",
+        "registered_capital_wan": 2000,
+        "address": "昆明市官渡区春城路 289 号",
+        "unified_credit_code": "9131000119MA168676K"
+      }
+    },
+    {
+      "id": "company-20",
+      "type": "Company",
+      "properties": {
+        "label": "合肥科里教育科技有限公司",
+        "content": "合肥科里教育科技有限公司（教育科技行业，注册资本 1200 万元，住所地：合肥市高新区望江西路 520 号）",
+        "industry": "教育科技",
+        "registered_capital_wan": 1200,
+        "address": "合肥市高新区望江西路 520 号",
+        "unified_credit_code": "9131000120MA358130K"
+      }
+    },
+    {
+      "id": "dept-01",
+      "type": "Department",
+      "properties": {
+        "label": "法务合规部",
+        "content": "法务合规部：合同评审、合规审查与法律风险管理",
+        "duty": "合同评审、合规审查与法律风险管理"
+      }
+    },
+    {
+      "id": "dept-02",
+      "type": "Department",
+      "properties": {
+        "label": "财务部",
+        "content": "财务部：预算审核、付款条款评审与资金管理",
+        "duty": "预算审核、付款条款评审与资金管理"
+      }
+    },
+    {
+      "id": "dept-03",
+      "type": "Department",
+      "properties": {
+        "label": "采购部",
+        "content": "采购部：供应商选择与采购合同签署管理",
+        "duty": "供应商选择与采购合同签署管理"
+      }
+    },
+    {
+      "id": "dept-04",
+      "type": "Department",
+      "properties": {
+        "label": "销售部",
+        "content": "销售部：客户拓展与销售合同签署管理",
+        "duty": "客户拓展与销售合同签署管理"
+      }
+    },
+    {
+      "id": "dept-05",
+      "type": "Department",
+      "properties": {
+        "label": "信息技术部",
+        "content": "信息技术部：系统建设与技术类合同管理",
+        "duty": "系统建设与技术类合同管理"
+      }
+    },
+    {
+      "id": "dept-06",
+      "type": "Department",
+      "properties": {
+        "label": "人力资源部",
+        "content": "人力资源部：劳务用工类合同管理",
+        "duty": "劳务用工类合同管理"
+      }
+    },
+    {
+      "id": "dept-07",
+      "type": "Department",
+      "properties": {
+        "label": "市场部",
+        "content": "市场部：市场推广类合同管理",
+        "duty": "市场推广类合同管理"
+      }
+    },
+    {
+      "id": "dept-08",
+      "type": "Department",
+      "properties": {
+        "label": "运营管理部",
+        "content": "运营管理部：履约跟踪与合同归档管理",
+        "duty": "履约跟踪与合同归档管理"
+      }
+    },
+    {
+      "id": "person-01",
+      "type": "Person",
+      "properties": {
+        "label": "李文博",
+        "content": "李文博，副总经理，任职于 北京华信数联科技股份有限公司",
+        "title": "副总经理",
+        "phone": "13867318027",
+        "email": "person-01@example.com"
+      }
+    },
+    {
+      "id": "person-02",
+      "type": "Person",
+      "properties": {
+        "label": "王静怡",
+        "content": "王静怡，法务总监，任职于 深圳市前海智能装备有限公司",
+        "title": "法务总监",
+        "phone": "13822119090",
+        "email": "person-02@example.com"
+      }
+    },
+    {
+      "id": "person-03",
+      "type": "Person",
+      "properties": {
+        "label": "张启航",
+        "content": "张启航，财务总监，任职于 广州启明贸易发展有限公司",
+        "title": "财务总监",
+        "phone": "13884702200",
+        "email": "person-03@example.com"
+      }
+    },
+    {
+      "id": "person-04",
+      "type": "Person",
+      "properties": {
+        "label": "刘思远",
+        "content": "刘思远，采购总监，任职于 江苏金陵精密制造有限公司",
+        "title": "采购总监",
+        "phone": "13839853600",
+        "email": "person-04@example.com"
+      }
+    },
+    {
+      "id": "person-05",
+      "type": "Person",
+      "properties": {
+        "label": "陈慧敏",
+        "content": "陈慧敏，销售总监，任职于 西安丝路新能源科技有限公司",
+        "title": "销售总监",
+        "phone": "13894534632",
+        "email": "person-05@example.com"
+      }
+    },
+    {
+      "id": "person-06",
+      "type": "Person",
+      "properties": {
+        "label": "杨志强",
+        "content": "杨志强，项目经理，任职于 南京紫金山电子科技有限公司",
+        "title": "项目经理",
+        "phone": "13880813538",
+        "email": "person-06@example.com"
+      }
+    },
+    {
+      "id": "person-07",
+      "type": "Person",
+      "properties": {
+        "label": "赵雅婷",
+        "content": "赵雅婷，合同管理专员，任职于 福州闽江金融服务有限公司",
+        "title": "合同管理专员",
+        "phone": "13838678163",
+        "email": "person-07@example.com"
+      }
+    },
+    {
+      "id": "person-08",
+      "type": "Person",
+      "properties": {
+        "label": "黄俊杰",
+        "content": "黄俊杰，总经理，任职于 上海云启科技有限公司",
+        "title": "总经理",
+        "phone": "13830632709",
+        "email": "person-08@example.com"
+      }
+    },
+    {
+      "id": "person-09",
+      "type": "Person",
+      "properties": {
+        "label": "周晓曼",
+        "content": "周晓曼，副总经理，任职于 北京华信数联科技股份有限公司",
+        "title": "副总经理",
+        "phone": "13816774908",
+        "email": "person-09@example.com"
+      }
+    },
+    {
+      "id": "person-10",
+      "type": "Person",
+      "properties": {
+        "label": "吴承泽",
+        "content": "吴承泽，法务总监，任职于 深圳市前海智能装备有限公司",
+        "title": "法务总监",
+        "phone": "13815233879",
+        "email": "person-10@example.com"
+      }
+    },
+    {
+      "id": "person-11",
+      "type": "Person",
+      "properties": {
+        "label": "徐立群",
+        "content": "徐立群，财务总监，任职于 广州启明贸易发展有限公司",
+        "title": "财务总监",
+        "phone": "13831234707",
+        "email": "person-11@example.com"
+      }
+    },
+    {
+      "id": "person-12",
+      "type": "Person",
+      "properties": {
+        "label": "孙梦洁",
+        "content": "孙梦洁，采购总监，任职于 江苏金陵精密制造有限公司",
+        "title": "采购总监",
+        "phone": "13825283568",
+        "email": "person-12@example.com"
+      }
+    },
+    {
+      "id": "person-13",
+      "type": "Person",
+      "properties": {
+        "label": "胡建国",
+        "content": "胡建国，销售总监，任职于 西安丝路新能源科技有限公司",
+        "title": "销售总监",
+        "phone": "13846160608",
+        "email": "person-13@example.com"
+      }
+    },
+    {
+      "id": "person-14",
+      "type": "Person",
+      "properties": {
+        "label": "朱丽华",
+        "content": "朱丽华，项目经理，任职于 南京紫金山电子科技有限公司",
+        "title": "项目经理",
+        "phone": "13872484414",
+        "email": "person-14@example.com"
+      }
+    },
+    {
+      "id": "person-15",
+      "type": "Person",
+      "properties": {
+        "label": "高天翔",
+        "content": "高天翔，合同管理专员，任职于 福州闽江金融服务有限公司",
+        "title": "合同管理专员",
+        "phone": "13864627141",
+        "email": "person-15@example.com"
+      }
+    },
+    {
+      "id": "person-16",
+      "type": "Person",
+      "properties": {
+        "label": "林嘉禾",
+        "content": "林嘉禾，总经理，任职于 上海云启科技有限公司",
+        "title": "总经理",
+        "phone": "13846921046",
+        "email": "person-16@example.com"
+      }
+    },
+    {
+      "id": "person-17",
+      "type": "Person",
+      "properties": {
+        "label": "何雪芹",
+        "content": "何雪芹，副总经理，任职于 北京华信数联科技股份有限公司",
+        "title": "副总经理",
+        "phone": "13837687256",
+        "email": "person-17@example.com"
+      }
+    },
+    {
+      "id": "person-18",
+      "type": "Person",
+      "properties": {
+        "label": "郭润生",
+        "content": "郭润生，法务总监，任职于 深圳市前海智能装备有限公司",
+        "title": "法务总监",
+        "phone": "13869680035",
+        "email": "person-18@example.com"
+      }
+    },
+    {
+      "id": "person-19",
+      "type": "Person",
+      "properties": {
+        "label": "马晓峰",
+        "content": "马晓峰，财务总监，任职于 广州启明贸易发展有限公司",
+        "title": "财务总监",
+        "phone": "13822163278",
+        "email": "person-19@example.com"
+      }
+    },
+    {
+      "id": "person-20",
+      "type": "Person",
+      "properties": {
+        "label": "罗丹妮",
+        "content": "罗丹妮，采购总监，任职于 江苏金陵精密制造有限公司",
+        "title": "采购总监",
+        "phone": "13852837396",
+        "email": "person-20@example.com"
+      }
+    },
+    {
+      "id": "person-21",
+      "type": "Person",
+      "properties": {
+        "label": "梁国栋",
+        "content": "梁国栋，销售总监，任职于 西安丝路新能源科技有限公司",
+        "title": "销售总监",
+        "phone": "13837423516",
+        "email": "person-21@example.com"
+      }
+    },
+    {
+      "id": "person-22",
+      "type": "Person",
+      "properties": {
+        "label": "宋雨薇",
+        "content": "宋雨薇，项目经理，任职于 南京紫金山电子科技有限公司",
+        "title": "项目经理",
+        "phone": "13822494324",
+        "email": "person-22@example.com"
+      }
+    },
+    {
+      "id": "person-23",
+      "type": "Person",
+      "properties": {
+        "label": "唐明礼",
+        "content": "唐明礼，合同管理专员，任职于 福州闽江金融服务有限公司",
+        "title": "合同管理专员",
+        "phone": "13887928075",
+        "email": "person-23@example.com"
+      }
+    },
+    {
+      "id": "person-24",
+      "type": "Person",
+      "properties": {
+        "label": "许静波",
+        "content": "许静波，总经理，任职于 上海云启科技有限公司",
+        "title": "总经理",
+        "phone": "13888299595",
+        "email": "person-24@example.com"
+      }
+    },
+    {
+      "id": "person-25",
+      "type": "Person",
+      "properties": {
+        "label": "韩志成",
+        "content": "韩志成，副总经理，任职于 北京华信数联科技股份有限公司",
+        "title": "副总经理",
+        "phone": "13816620931",
+        "email": "person-25@example.com"
+      }
+    },
+    {
+      "id": "person-26",
+      "type": "Person",
+      "properties": {
+        "label": "冯雅君",
+        "content": "冯雅君，法务总监，任职于 深圳市前海智能装备有限公司",
+        "title": "法务总监",
+        "phone": "13877931823",
+        "email": "person-26@example.com"
+      }
+    },
+    {
+      "id": "person-27",
+      "type": "Person",
+      "properties": {
+        "label": "邓子豪",
+        "content": "邓子豪，财务总监，任职于 广州启明贸易发展有限公司",
+        "title": "财务总监",
+        "phone": "13837772806",
+        "email": "person-27@example.com"
+      }
+    },
+    {
+      "id": "person-28",
+      "type": "Person",
+      "properties": {
+        "label": "曹惠芳",
+        "content": "曹惠芳，采购总监，任职于 江苏金陵精密制造有限公司",
+        "title": "采购总监",
+        "phone": "13871453379",
+        "email": "person-28@example.com"
+      }
+    },
+    {
+      "id": "person-29",
+      "type": "Person",
+      "properties": {
+        "label": "彭绍辉",
+        "content": "彭绍辉，销售总监，任职于 西安丝路新能源科技有限公司",
+        "title": "销售总监",
+        "phone": "13838943663",
+        "email": "person-29@example.com"
+      }
+    },
+    {
+      "id": "person-30",
+      "type": "Person",
+      "properties": {
+        "label": "肖若琳",
+        "content": "肖若琳，项目经理，任职于 南京紫金山电子科技有限公司",
+        "title": "项目经理",
+        "phone": "13872482205",
+        "email": "person-30@example.com"
+      }
+    },
+    {
+      "id": "payment-01",
+      "type": "PaymentTerms",
+      "properties": {
+        "label": "一次性预付",
+        "content": "签约后 10 个工作日内一次性支付"
+      }
+    },
+    {
+      "id": "payment-02",
+      "type": "PaymentTerms",
+      "properties": {
+        "label": "货到付款 30 天",
+        "content": "验收合格后 30 天内一次性支付"
+      }
+    },
+    {
+      "id": "payment-03",
+      "type": "PaymentTerms",
+      "properties": {
+        "label": "分期付款（3 期）",
+        "content": "签约付 40%，交付付 40%，验收付 20%"
+      }
+    },
+    {
+      "id": "payment-04",
+      "type": "PaymentTerms",
+      "properties": {
+        "label": "分期付款（4 期）",
+        "content": "按季度等额分四期支付"
+      }
+    },
+    {
+      "id": "payment-05",
+      "type": "PaymentTerms",
+      "properties": {
+        "label": "月结 60 天",
+        "content": "自然月对账后 60 天电汇支付"
+      }
+    },
+    {
+      "id": "payment-06",
+      "type": "PaymentTerms",
+      "properties": {
+        "label": "里程碑付款",
+        "content": "按项目里程碑验收分批支付"
+      }
+    },
+    {
+      "id": "regulation-01",
+      "type": "Regulation",
+      "properties": {
+        "label": "《中华人民共和国民法典》合同编",
+        "content": "《中华人民共和国民法典》合同编：合同订立、效力、履行与违约责任的一般规定"
+      }
+    },
+    {
+      "id": "regulation-02",
+      "type": "Regulation",
+      "properties": {
+        "label": "《中华人民共和国数据安全法》",
+        "content": "《中华人民共和国数据安全法》：数据处理活动与数据安全义务"
+      }
+    },
+    {
+      "id": "regulation-03",
+      "type": "Regulation",
+      "properties": {
+        "label": "《中华人民共和国个人信息保护法》",
+        "content": "《中华人民共和国个人信息保护法》：个人信息处理的合规要求"
+      }
+    },
+    {
+      "id": "regulation-04",
+      "type": "Regulation",
+      "properties": {
+        "label": "《中华人民共和国电子签名法》",
+        "content": "《中华人民共和国电子签名法》：电子签名与电子合同的法律效力"
+      }
+    },
+    {
+      "id": "regulation-05",
+      "type": "Regulation",
+      "properties": {
+        "label": "《中华人民共和国招标投标法》",
+        "content": "《中华人民共和国招标投标法》：必须招标项目的采购程序要求"
+      }
+    },
+    {
+      "id": "regulation-06",
+      "type": "Regulation",
+      "properties": {
+        "label": "《中华人民共和国公司法》",
+        "content": "《中华人民共和国公司法》：公司担保与决议的效力规则"
+      }
+    },
+    {
+      "id": "project-01",
+      "type": "Project",
+      "properties": {
+        "label": "数字化转型项目",
+        "content": "数字化转型项目：企业核心业务系统全面数字化改造"
+      }
+    },
+    {
+      "id": "project-02",
+      "type": "Project",
+      "properties": {
+        "label": "智慧园区建设项目",
+        "content": "智慧园区建设项目：园区安防、能耗与通行一体化平台建设"
+      }
+    },
+    {
+      "id": "project-03",
+      "type": "Project",
+      "properties": {
+        "label": "ERP 系统升级项目",
+        "content": "ERP 系统升级项目：ERP 平台从 8.0 迁移升级至 12.0"
+      }
+    },
+    {
+      "id": "project-04",
+      "type": "Project",
+      "properties": {
+        "label": "海外市场拓展项目",
+        "content": "海外市场拓展项目：东南亚区域市场渠道建设"
+      }
+    },
+    {
+      "id": "project-05",
+      "type": "Project",
+      "properties": {
+        "label": "产能扩建项目",
+        "content": "产能扩建项目：二期厂房与产线扩建"
+      }
+    },
+    {
+      "id": "project-06",
+      "type": "Project",
+      "properties": {
+        "label": "数据中台建设项目",
+        "content": "数据中台建设项目：集团级数据资产平台建设"
+      }
+    },
+    {
+      "id": "project-07",
+      "type": "Project",
+      "properties": {
+        "label": "供应链优化项目",
+        "content": "供应链优化项目：仓储网络与运输路径优化"
+      }
+    },
+    {
+      "id": "project-08",
+      "type": "Project",
+      "properties": {
+        "label": "新产品研发项目",
+        "content": "新产品研发项目：新一代智能终端产品研发"
+      }
+    },
+    {
+      "id": "project-09",
+      "type": "Project",
+      "properties": {
+        "label": "品牌升级项目",
+        "content": "品牌升级项目：品牌视觉与传播体系升级"
+      }
+    },
+    {
+      "id": "project-10",
+      "type": "Project",
+      "properties": {
+        "label": "区域仓储网络项目",
+        "content": "区域仓储网络项目：华中区域分仓体系建设"
+      }
+    },
+    {
+      "id": "product-01",
+      "type": "Product",
+      "properties": {
+        "label": "ERP 软件许可",
+        "content": "ERP 软件许可（软件许可，标准单价 450000 元）",
+        "category": "软件许可",
+        "unit_price_yuan": 450000
+      }
+    },
+    {
+      "id": "product-02",
+      "type": "Product",
+      "properties": {
+        "label": "云服务器资源包",
+        "content": "云服务器资源包（云服务，标准单价 320000 元）",
+        "category": "云服务",
+        "unit_price_yuan": 320000
+      }
+    },
+    {
+      "id": "product-03",
+      "type": "Product",
+      "properties": {
+        "label": "工业机器人本体",
+        "content": "工业机器人本体（智能装备，标准单价 280000 元）",
+        "category": "智能装备",
+        "unit_price_yuan": 280000
+      }
+    },
+    {
+      "id": "product-04",
+      "type": "Product",
+      "properties": {
+        "label": "精密数控机床",
+        "content": "精密数控机床（精密制造，标准单价 860000 元）",
+        "category": "精密制造",
+        "unit_price_yuan": 860000
+      }
+    },
+    {
+      "id": "product-05",
+      "type": "Product",
+      "properties": {
+        "label": "智能仓储货架系统",
+        "content": "智能仓储货架系统（仓储设备，标准单价 150000 元）",
+        "category": "仓储设备",
+        "unit_price_yuan": 150000
+      }
+    },
+    {
+      "id": "product-06",
+      "type": "Product",
+      "properties": {
+        "label": "SaaS 数据分析平台",
+        "content": "SaaS 数据分析平台（云服务，标准单价 98000 元）",
+        "category": "云服务",
+        "unit_price_yuan": 98000
+      }
+    },
+    {
+      "id": "product-07",
+      "type": "Product",
+      "properties": {
+        "label": "网络安全托管服务",
+        "content": "网络安全托管服务（安全服务，标准单价 120000 元）",
+        "category": "安全服务",
+        "unit_price_yuan": 120000
+      }
+    },
+    {
+      "id": "product-08",
+      "type": "Product",
+      "properties": {
+        "label": "干线运输服务",
+        "content": "干线运输服务（物流服务，标准单价 210000 元）",
+        "category": "物流服务",
+        "unit_price_yuan": 210000
+      }
+    },
+    {
+      "id": "product-09",
+      "type": "Product",
+      "properties": {
+        "label": "冷轧钢板（大宗）",
+        "content": "冷轧钢板（大宗）（原材料，标准单价 390000 元）",
+        "category": "原材料",
+        "unit_price_yuan": 390000
+      }
+    },
+    {
+      "id": "product-10",
+      "type": "Product",
+      "properties": {
+        "label": "办公场地租赁",
+        "content": "办公场地租赁（不动产租赁，标准单价 660000 元）",
+        "category": "不动产租赁",
+        "unit_price_yuan": 660000
+      }
+    },
+    {
+      "id": "product-11",
+      "type": "Product",
+      "properties": {
+        "label": "数字广告投放服务",
+        "content": "数字广告投放服务（营销服务，标准单价 540000 元）",
+        "category": "营销服务",
+        "unit_price_yuan": 540000
+      }
+    },
+    {
+      "id": "product-12",
+      "type": "Product",
+      "properties": {
+        "label": "定制开发服务",
+        "content": "定制开发服务（软件开发，标准单价 480000 元）",
+        "category": "软件开发",
+        "unit_price_yuan": 480000
+      }
+    },
+    {
+      "id": "product-13",
+      "type": "Product",
+      "properties": {
+        "label": "运维支持服务",
+        "content": "运维支持服务（IT 运维，标准单价 88000 元）",
+        "category": "IT 运维",
+        "unit_price_yuan": 88000
+      }
+    },
+    {
+      "id": "product-14",
+      "type": "Product",
+      "properties": {
+        "label": "企业培训课程包",
+        "content": "企业培训课程包（培训服务，标准单价 36000 元）",
+        "category": "培训服务",
+        "unit_price_yuan": 36000
+      }
+    },
+    {
+      "id": "product-15",
+      "type": "Product",
+      "properties": {
+        "label": "检测认证服务",
+        "content": "检测认证服务（专业服务，标准单价 45000 元）",
+        "category": "专业服务",
+        "unit_price_yuan": 45000
+      }
+    },
+    {
+      "id": "contract-01",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-01《产品采购合同》",
+        "content": "合同编号 HT-2023-0001：上海云启科技有限公司与成都天府软件系统集成有限公司签订的产品采购合同，合同金额 688 万美元，类别「采购」，状态「履行中」。",
+        "contract_no": "HT-2023-0001",
+        "category": "采购",
+        "status": "履行中",
+        "amount": 688,
+        "currency": "USD",
+        "sign_date": "2023-12-17"
+      }
+    },
+    {
+      "id": "contract-02",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-02《产品销售合同》",
+        "content": "合同编号 HT-2025-0002：上海云启科技有限公司与江苏金陵精密制造有限公司签订的产品销售合同，合同金额 3227 万元，类别「销售」，状态「已生效」。",
+        "contract_no": "HT-2025-0002",
+        "category": "销售",
+        "status": "已生效",
+        "amount": 3227,
+        "currency": "CNY",
+        "sign_date": "2025-08-09"
+      }
+    },
+    {
+      "id": "contract-03",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-03《软件开发服务合同》",
+        "content": "合同编号 HT-2022-0003：上海云启科技有限公司与武汉光谷通信设备有限公司签订的软件开发服务合同，合同金额 954 万元，类别「技术服务」，状态「已生效」。",
+        "contract_no": "HT-2022-0003",
+        "category": "技术服务",
+        "status": "已生效",
+        "amount": 954,
+        "currency": "CNY",
+        "sign_date": "2022-12-23"
+      }
+    },
+    {
+      "id": "contract-04",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-04《设备租赁合同》",
+        "content": "合同编号 HT-2023-0004：上海云启科技有限公司与福州闽江金融服务有限公司签订的设备租赁合同，合同金额 1801 万元，类别「租赁」，状态「审批中」。",
+        "contract_no": "HT-2023-0004",
+        "category": "租赁",
+        "status": "审批中",
+        "amount": 1801,
+        "currency": "CNY",
+        "sign_date": "2023-06-01"
+      }
+    },
+    {
+      "id": "contract-05",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-05《保密协议》",
+        "content": "合同编号 HT-2023-0005：上海云启科技有限公司与南京紫金山电子科技有限公司签订的保密协议，合同金额 4 万美元，类别「保密」，状态「已生效」。",
+        "contract_no": "HT-2023-0005",
+        "category": "保密",
+        "status": "已生效",
+        "amount": 4,
+        "currency": "USD",
+        "sign_date": "2023-06-05"
+      }
+    },
+    {
+      "id": "contract-06",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-06《劳务派遣合同》",
+        "content": "合同编号 HT-2025-0006：上海云启科技有限公司与深圳市前海智能装备有限公司签订的劳务派遣合同，合同金额 5186 万元，类别「劳务」，状态「履行中」。",
+        "contract_no": "HT-2025-0006",
+        "category": "劳务",
+        "status": "履行中",
+        "amount": 5186,
+        "currency": "CNY",
+        "sign_date": "2025-07-25"
+      }
+    },
+    {
+      "id": "contract-07",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-07《技术服务合同》",
+        "content": "合同编号 HT-2024-0007：上海云启科技有限公司与江苏金陵精密制造有限公司签订的技术服务合同，合同金额 7127 万元，类别「技术服务」，状态「已到期」。",
+        "contract_no": "HT-2024-0007",
+        "category": "技术服务",
+        "status": "已到期",
+        "amount": 7127,
+        "currency": "CNY",
+        "sign_date": "2024-01-25"
+      }
+    },
+    {
+      "id": "contract-08",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-08《房屋租赁合同》",
+        "content": "合同编号 HT-2024-0008：上海云启科技有限公司与杭州矩阵数据服务有限公司签订的房屋租赁合同，合同金额 868 万元，类别「租赁」，状态「已生效」。",
+        "contract_no": "HT-2024-0008",
+        "category": "租赁",
+        "status": "已生效",
+        "amount": 868,
+        "currency": "CNY",
+        "sign_date": "2024-07-10"
+      }
+    },
+    {
+      "id": "contract-09",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-09《货物运输合同》",
+        "content": "合同编号 HT-2023-0009：上海云启科技有限公司与深圳市前海智能装备有限公司签订的货物运输合同，合同金额 1430 万元，类别「物流」，状态「已到期」。",
+        "contract_no": "HT-2023-0009",
+        "category": "物流",
+        "status": "已到期",
+        "amount": 1430,
+        "currency": "CNY",
+        "sign_date": "2023-08-13"
+      }
+    },
+    {
+      "id": "contract-10",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-10《市场推广服务合同》",
+        "content": "合同编号 HT-2024-0010：上海云启科技有限公司与武汉光谷通信设备有限公司签订的市场推广服务合同，合同金额 4932 万元，类别「营销服务」，状态「已生效」。",
+        "contract_no": "HT-2024-0010",
+        "category": "营销服务",
+        "status": "已生效",
+        "amount": 4932,
+        "currency": "CNY",
+        "sign_date": "2024-05-22"
+      }
+    },
+    {
+      "id": "contract-11",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-11《技术开发合同》",
+        "content": "合同编号 HT-2023-0011：上海云启科技有限公司与西安丝路新能源科技有限公司签订的技术开发合同，合同金额 2447 万元，类别「技术开发」，状态「履行中」。",
+        "contract_no": "HT-2023-0011",
+        "category": "技术开发",
+        "status": "履行中",
+        "amount": 2447,
+        "currency": "CNY",
+        "sign_date": "2023-07-16"
+      }
+    },
+    {
+      "id": "contract-12",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-12《咨询顾问合同》",
+        "content": "合同编号 HT-2023-0012：上海云启科技有限公司与武汉光谷通信设备有限公司签订的咨询顾问合同，合同金额 4954 万元，类别「咨询」，状态「履行中」。",
+        "contract_no": "HT-2023-0012",
+        "category": "咨询",
+        "status": "履行中",
+        "amount": 4954,
+        "currency": "CNY",
+        "sign_date": "2023-11-16"
+      }
+    },
+    {
+      "id": "contract-13",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-13《运维服务合同》",
+        "content": "合同编号 HT-2024-0013：上海云启科技有限公司与苏州园林建筑装饰工程有限公司签订的运维服务合同，合同金额 4040 万元，类别「技术服务」，状态「已到期」。",
+        "contract_no": "HT-2024-0013",
+        "category": "技术服务",
+        "status": "已到期",
+        "amount": 4040,
+        "currency": "CNY",
+        "sign_date": "2024-05-14"
+      }
+    },
+    {
+      "id": "contract-14",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-14《设备维护合同》",
+        "content": "合同编号 HT-2024-0014：上海云启科技有限公司与苏州园林建筑装饰工程有限公司签订的设备维护合同，合同金额 3140 万元，类别「技术服务」，状态「履行中」。",
+        "contract_no": "HT-2024-0014",
+        "category": "技术服务",
+        "status": "履行中",
+        "amount": 3140,
+        "currency": "CNY",
+        "sign_date": "2024-09-14"
+      }
+    },
+    {
+      "id": "contract-15",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-15《原材料采购合同》",
+        "content": "合同编号 HT-2022-0015：上海云启科技有限公司与郑州中原物流仓储有限公司签订的原材料采购合同，合同金额 2651 万元，类别「采购」，状态「履行中」。",
+        "contract_no": "HT-2022-0015",
+        "category": "采购",
+        "status": "履行中",
+        "amount": 2651,
+        "currency": "CNY",
+        "sign_date": "2022-08-08"
+      }
+    },
+    {
+      "id": "contract-16",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-16《系统集成服务合同》",
+        "content": "合同编号 HT-2025-0016：上海云启科技有限公司与广州启明贸易发展有限公司签订的系统集成服务合同，合同金额 957 万美元，类别「技术服务」，状态「已到期」。",
+        "contract_no": "HT-2025-0016",
+        "category": "技术服务",
+        "status": "已到期",
+        "amount": 957,
+        "currency": "USD",
+        "sign_date": "2025-01-17"
+      }
+    },
+    {
+      "id": "contract-17",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-17《广告投放合同》",
+        "content": "合同编号 HT-2024-0017：上海云启科技有限公司与天津渤海化工集团签订的广告投放合同，合同金额 6038 万元，类别「营销服务」，状态「已终止」。",
+        "contract_no": "HT-2024-0017",
+        "category": "营销服务",
+        "status": "已终止",
+        "amount": 6038,
+        "currency": "CNY",
+        "sign_date": "2024-01-23"
+      }
+    },
+    {
+      "id": "contract-18",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-18《培训服务合同》",
+        "content": "合同编号 HT-2025-0018：上海云启科技有限公司与广州启明贸易发展有限公司签订的培训服务合同，合同金额 218 万美元，类别「服务」，状态「履行中」。",
+        "contract_no": "HT-2025-0018",
+        "category": "服务",
+        "status": "履行中",
+        "amount": 218,
+        "currency": "USD",
+        "sign_date": "2025-04-05"
+      }
+    },
+    {
+      "id": "contract-19",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-19《仓储服务合同》",
+        "content": "合同编号 HT-2024-0019：上海云启科技有限公司与西安丝路新能源科技有限公司签订的仓储服务合同，合同金额 409 万美元，类别「物流」，状态「履行中」。",
+        "contract_no": "HT-2024-0019",
+        "category": "物流",
+        "status": "履行中",
+        "amount": 409,
+        "currency": "USD",
+        "sign_date": "2024-01-29"
+      }
+    },
+    {
+      "id": "contract-20",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-20《检测认证服务合同》",
+        "content": "合同编号 HT-2024-0020：上海云启科技有限公司与北京华信数联科技股份有限公司签订的检测认证服务合同，合同金额 211 万元，类别「服务」，状态「已到期」。",
+        "contract_no": "HT-2024-0020",
+        "category": "服务",
+        "status": "已到期",
+        "amount": 211,
+        "currency": "CNY",
+        "sign_date": "2024-08-10"
+      }
+    },
+    {
+      "id": "contract-21",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-21《软件许可合同》",
+        "content": "合同编号 HT-2025-0021：上海云启科技有限公司与北京华信数联科技股份有限公司签订的软件许可合同，合同金额 875 万美元，类别「销售」，状态「已生效」。",
+        "contract_no": "HT-2025-0021",
+        "category": "销售",
+        "status": "已生效",
+        "amount": 875,
+        "currency": "USD",
+        "sign_date": "2025-01-23"
+      }
+    },
+    {
+      "id": "contract-22",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-22《数据服务合同》",
+        "content": "合同编号 HT-2025-0022：上海云启科技有限公司与深圳市前海智能装备有限公司签订的数据服务合同，合同金额 3685 万元，类别「技术服务」，状态「审批中」。",
+        "contract_no": "HT-2025-0022",
+        "category": "技术服务",
+        "status": "审批中",
+        "amount": 3685,
+        "currency": "CNY",
+        "sign_date": "2025-02-16"
+      }
+    },
+    {
+      "id": "contract-23",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-23《工程总承包合同》",
+        "content": "合同编号 HT-2022-0023：上海云启科技有限公司与南京紫金山电子科技有限公司签订的工程总承包合同，合同金额 1943 万元，类别「工程」，状态「已终止」。",
+        "contract_no": "HT-2022-0023",
+        "category": "工程",
+        "status": "已终止",
+        "amount": 1943,
+        "currency": "CNY",
+        "sign_date": "2022-05-13"
+      }
+    },
+    {
+      "id": "contract-24",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-24《设计咨询合同》",
+        "content": "合同编号 HT-2024-0024：上海云启科技有限公司与深圳市前海智能装备有限公司签订的设计咨询合同，合同金额 6469 万元，类别「咨询」，状态「履行中」。",
+        "contract_no": "HT-2024-0024",
+        "category": "咨询",
+        "status": "履行中",
+        "amount": 6469,
+        "currency": "CNY",
+        "sign_date": "2024-03-13"
+      }
+    },
+    {
+      "id": "contract-25",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-25《融资担保合同》",
+        "content": "合同编号 HT-2024-0025：上海云启科技有限公司与江苏金陵精密制造有限公司签订的融资担保合同，合同金额 2116 万元，类别「金融」，状态「履行中」。",
+        "contract_no": "HT-2024-0025",
+        "category": "金融",
+        "status": "履行中",
+        "amount": 2116,
+        "currency": "CNY",
+        "sign_date": "2024-12-21"
+      }
+    },
+    {
+      "id": "contract-26",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-26《联合研发合同》",
+        "content": "合同编号 HT-2022-0026：上海云启科技有限公司与北京华信数联科技股份有限公司签订的联合研发合同，合同金额 4586 万元，类别「技术开发」，状态「审批中」。",
+        "contract_no": "HT-2022-0026",
+        "category": "技术开发",
+        "status": "审批中",
+        "amount": 4586,
+        "currency": "CNY",
+        "sign_date": "2022-05-31"
+      }
+    },
+    {
+      "id": "contract-27",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-27《渠道代理合同》",
+        "content": "合同编号 HT-2022-0027：上海云启科技有限公司与西安丝路新能源科技有限公司签订的渠道代理合同，合同金额 594 万美元，类别「销售」，状态「已生效」。",
+        "contract_no": "HT-2022-0027",
+        "category": "销售",
+        "status": "已生效",
+        "amount": 594,
+        "currency": "USD",
+        "sign_date": "2022-03-14"
+      }
+    },
+    {
+      "id": "contract-28",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-28《云资源服务合同》",
+        "content": "合同编号 HT-2025-0028：上海云启科技有限公司与福州闽江金融服务有限公司签订的云资源服务合同，合同金额 2991 万元，类别「技术服务」，状态「已生效」。",
+        "contract_no": "HT-2025-0028",
+        "category": "技术服务",
+        "status": "已生效",
+        "amount": 2991,
+        "currency": "CNY",
+        "sign_date": "2025-02-18"
+      }
+    },
+    {
+      "id": "contract-29",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-29《供应链服务合同》",
+        "content": "合同编号 HT-2025-0029：上海云启科技有限公司与西安丝路新能源科技有限公司签订的供应链服务合同，合同金额 6028 万元，类别「服务」，状态「履行中」。",
+        "contract_no": "HT-2025-0029",
+        "category": "服务",
+        "status": "履行中",
+        "amount": 6028,
+        "currency": "CNY",
+        "sign_date": "2025-03-05"
+      }
+    },
+    {
+      "id": "contract-30",
+      "type": "Contract",
+      "properties": {
+        "label": "CONTRACT-30《品牌授权合同》",
+        "content": "合同编号 HT-2022-0030：上海云启科技有限公司与北京华信数联科技股份有限公司签订的品牌授权合同，合同金额 5718 万元，类别「销售」，状态「履行中」。",
+        "contract_no": "HT-2022-0030",
+        "category": "销售",
+        "status": "履行中",
+        "amount": 5718,
+        "currency": "CNY",
+        "sign_date": "2022-05-24"
+      }
+    },
+    {
+      "id": "amendment-01",
+      "type": "Amendment",
+      "properties": {
+        "label": "价格调整补充协议（HT-2022-0001 之补充）",
+        "content": "针对 CONTRACT-01 签订的价格调整补充协议，签署日期 2024-09-15。",
+        "amendment_no": "BC-2024-0001"
+      }
+    },
+    {
+      "id": "amendment-02",
+      "type": "Amendment",
+      "properties": {
+        "label": "延期履行补充协议（HT-2022-0002 之补充）",
+        "content": "针对 CONTRACT-02 签订的延期履行补充协议，签署日期 2025-03-27。",
+        "amendment_no": "BC-2025-0002"
+      }
+    },
+    {
+      "id": "amendment-03",
+      "type": "Amendment",
+      "properties": {
+        "label": "变更标的规格补充协议（HT-2022-0003 之补充）",
+        "content": "针对 CONTRACT-03 签订的变更标的规格补充协议，签署日期 2025-06-29。",
+        "amendment_no": "BC-2025-0003"
+      }
+    },
+    {
+      "id": "amendment-04",
+      "type": "Amendment",
+      "properties": {
+        "label": "增加服务范围补充协议（HT-2022-0004 之补充）",
+        "content": "针对 CONTRACT-04 签订的增加服务范围补充协议，签署日期 2025-04-27。",
+        "amendment_no": "BC-2025-0004"
+      }
+    },
+    {
+      "id": "amendment-05",
+      "type": "Amendment",
+      "properties": {
+        "label": "付款计划变更补充协议（HT-2022-0005 之补充）",
+        "content": "针对 CONTRACT-05 签订的付款计划变更补充协议，签署日期 2025-11-06。",
+        "amendment_no": "BC-2025-0005"
+      }
+    },
+    {
+      "id": "amendment-06",
+      "type": "Amendment",
+      "properties": {
+        "label": "续展期限补充协议（HT-2022-0006 之补充）",
+        "content": "针对 CONTRACT-06 签订的续展期限补充协议，签署日期 2024-03-19。",
+        "amendment_no": "BC-2024-0006"
+      }
+    },
+    {
+      "id": "amendment-07",
+      "type": "Amendment",
+      "properties": {
+        "label": "保密范围扩展补充协议（HT-2022-0007 之补充）",
+        "content": "针对 CONTRACT-07 签订的保密范围扩展补充协议，签署日期 2025-09-07。",
+        "amendment_no": "BC-2025-0007"
+      }
+    },
+    {
+      "id": "amendment-08",
+      "type": "Amendment",
+      "properties": {
+        "label": "违约责任修订补充协议（HT-2022-0008 之补充）",
+        "content": "针对 CONTRACT-08 签订的违约责任修订补充协议，签署日期 2024-04-29。",
+        "amendment_no": "BC-2024-0008"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "dept-01",
+      "target": "company-01",
+      "type": "belongs_to",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "dept-02",
+      "target": "company-01",
+      "type": "belongs_to",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "dept-03",
+      "target": "company-01",
+      "type": "belongs_to",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "dept-04",
+      "target": "company-01",
+      "type": "belongs_to",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "dept-05",
+      "target": "company-01",
+      "type": "belongs_to",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "dept-06",
+      "target": "company-01",
+      "type": "belongs_to",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "dept-07",
+      "target": "company-01",
+      "type": "belongs_to",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "dept-08",
+      "target": "company-01",
+      "type": "belongs_to",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "person-01",
+      "target": "company-02",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "副总经理"
+      }
+    },
+    {
+      "source": "person-01",
+      "target": "dept-02",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-02",
+      "target": "company-03",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "法务总监"
+      }
+    },
+    {
+      "source": "person-02",
+      "target": "dept-03",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-03",
+      "target": "company-05",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "财务总监"
+      }
+    },
+    {
+      "source": "person-03",
+      "target": "dept-04",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-04",
+      "target": "company-08",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "采购总监"
+      }
+    },
+    {
+      "source": "person-04",
+      "target": "dept-05",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-05",
+      "target": "company-11",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "销售总监"
+      }
+    },
+    {
+      "source": "person-05",
+      "target": "dept-06",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-06",
+      "target": "company-15",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "项目经理"
+      }
+    },
+    {
+      "source": "person-06",
+      "target": "dept-07",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-07",
+      "target": "company-16",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "合同管理专员"
+      }
+    },
+    {
+      "source": "person-07",
+      "target": "dept-08",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-08",
+      "target": "company-01",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "总经理"
+      }
+    },
+    {
+      "source": "person-08",
+      "target": "dept-01",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-09",
+      "target": "company-02",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "副总经理"
+      }
+    },
+    {
+      "source": "person-09",
+      "target": "dept-02",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-10",
+      "target": "company-03",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "法务总监"
+      }
+    },
+    {
+      "source": "person-10",
+      "target": "dept-03",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-11",
+      "target": "company-05",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "财务总监"
+      }
+    },
+    {
+      "source": "person-11",
+      "target": "dept-04",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-12",
+      "target": "company-08",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "采购总监"
+      }
+    },
+    {
+      "source": "person-12",
+      "target": "dept-05",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-13",
+      "target": "company-11",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "销售总监"
+      }
+    },
+    {
+      "source": "person-13",
+      "target": "dept-06",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-14",
+      "target": "company-15",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "项目经理"
+      }
+    },
+    {
+      "source": "person-14",
+      "target": "dept-07",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-15",
+      "target": "company-16",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "合同管理专员"
+      }
+    },
+    {
+      "source": "person-15",
+      "target": "dept-08",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-16",
+      "target": "company-01",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "总经理"
+      }
+    },
+    {
+      "source": "person-16",
+      "target": "dept-01",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-17",
+      "target": "company-02",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "副总经理"
+      }
+    },
+    {
+      "source": "person-17",
+      "target": "dept-02",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-18",
+      "target": "company-03",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "法务总监"
+      }
+    },
+    {
+      "source": "person-18",
+      "target": "dept-03",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-19",
+      "target": "company-05",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "财务总监"
+      }
+    },
+    {
+      "source": "person-19",
+      "target": "dept-04",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-20",
+      "target": "company-08",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "采购总监"
+      }
+    },
+    {
+      "source": "person-20",
+      "target": "dept-05",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-21",
+      "target": "company-11",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "销售总监"
+      }
+    },
+    {
+      "source": "person-21",
+      "target": "dept-06",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-22",
+      "target": "company-15",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "项目经理"
+      }
+    },
+    {
+      "source": "person-22",
+      "target": "dept-07",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-23",
+      "target": "company-16",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "合同管理专员"
+      }
+    },
+    {
+      "source": "person-23",
+      "target": "dept-08",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-24",
+      "target": "company-01",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "总经理"
+      }
+    },
+    {
+      "source": "person-24",
+      "target": "dept-01",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-25",
+      "target": "company-02",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "副总经理"
+      }
+    },
+    {
+      "source": "person-25",
+      "target": "dept-02",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-26",
+      "target": "company-03",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "法务总监"
+      }
+    },
+    {
+      "source": "person-26",
+      "target": "dept-03",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-27",
+      "target": "company-05",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "财务总监"
+      }
+    },
+    {
+      "source": "person-27",
+      "target": "dept-04",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-28",
+      "target": "company-08",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "采购总监"
+      }
+    },
+    {
+      "source": "person-28",
+      "target": "dept-05",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-29",
+      "target": "company-11",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "销售总监"
+      }
+    },
+    {
+      "source": "person-29",
+      "target": "dept-06",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "person-30",
+      "target": "company-15",
+      "type": "works_for",
+      "weight": 0.9,
+      "properties": {
+        "title": "项目经理"
+      }
+    },
+    {
+      "source": "person-30",
+      "target": "dept-07",
+      "type": "member_of",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-01",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2023-12-17"
+    },
+    {
+      "source": "company-06",
+      "target": "contract-01",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2023-12-17"
+    },
+    {
+      "source": "company-03",
+      "target": "contract-01",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2023-12-17"
+    },
+    {
+      "source": "person-12",
+      "target": "contract-01",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2023-12-17"
+    },
+    {
+      "source": "person-04",
+      "target": "contract-01",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2023-12-14"
+      }
+    },
+    {
+      "source": "person-07",
+      "target": "contract-01",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2023-12-11"
+      }
+    },
+    {
+      "source": "person-22",
+      "target": "contract-01",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2023-12-08"
+      }
+    },
+    {
+      "source": "dept-02",
+      "target": "contract-01",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-01",
+      "target": "product-12",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 13
+      }
+    },
+    {
+      "source": "contract-01",
+      "target": "product-01",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 36
+      }
+    },
+    {
+      "source": "contract-01",
+      "target": "payment-06",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-01",
+      "target": "project-09",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-01",
+      "target": "regulation-06",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-02",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2025-08-09"
+    },
+    {
+      "source": "company-08",
+      "target": "contract-02",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2025-08-09"
+    },
+    {
+      "source": "person-06",
+      "target": "contract-02",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-08-09"
+    },
+    {
+      "source": "person-10",
+      "target": "contract-02",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2025-08-06"
+      }
+    },
+    {
+      "source": "person-26",
+      "target": "contract-02",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2025-08-03"
+      }
+    },
+    {
+      "source": "person-16",
+      "target": "contract-02",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2025-07-31"
+      }
+    },
+    {
+      "source": "dept-06",
+      "target": "contract-02",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-02",
+      "target": "product-07",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 30
+      }
+    },
+    {
+      "source": "contract-02",
+      "target": "product-14",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 29
+      }
+    },
+    {
+      "source": "contract-02",
+      "target": "payment-02",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-02",
+      "target": "project-01",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-02",
+      "target": "regulation-05",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-20",
+      "target": "contract-02",
+      "type": "guarantees",
+      "weight": 0.6,
+      "properties": {
+        "guarantee_type": "保证金担保"
+      },
+      "valid_from": "2025-08-09"
+    },
+    {
+      "source": "company-01",
+      "target": "contract-03",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2022-12-23"
+    },
+    {
+      "source": "company-07",
+      "target": "contract-03",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2022-12-23"
+    },
+    {
+      "source": "person-25",
+      "target": "contract-03",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2022-12-23"
+    },
+    {
+      "source": "person-29",
+      "target": "contract-03",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2022-12-20"
+      }
+    },
+    {
+      "source": "person-16",
+      "target": "contract-03",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2022-12-17"
+      }
+    },
+    {
+      "source": "person-19",
+      "target": "contract-03",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2022-12-14"
+      }
+    },
+    {
+      "source": "dept-03",
+      "target": "contract-03",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-03",
+      "target": "product-01",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 45
+      }
+    },
+    {
+      "source": "contract-03",
+      "target": "product-11",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 24
+      }
+    },
+    {
+      "source": "contract-03",
+      "target": "payment-03",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-03",
+      "target": "project-08",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-03",
+      "target": "regulation-06",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-04",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2023-06-01"
+    },
+    {
+      "source": "company-16",
+      "target": "contract-04",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2023-06-01"
+    },
+    {
+      "source": "person-09",
+      "target": "contract-04",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2023-06-01"
+    },
+    {
+      "source": "person-30",
+      "target": "contract-04",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2023-05-29"
+      }
+    },
+    {
+      "source": "person-25",
+      "target": "contract-04",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2023-05-26"
+      }
+    },
+    {
+      "source": "person-30",
+      "target": "contract-04",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2023-05-23"
+      }
+    },
+    {
+      "source": "dept-08",
+      "target": "contract-04",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-04",
+      "target": "product-02",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 43
+      }
+    },
+    {
+      "source": "contract-04",
+      "target": "product-02",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 25
+      }
+    },
+    {
+      "source": "contract-04",
+      "target": "payment-05",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-04",
+      "target": "regulation-05",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-05",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2023-06-05"
+    },
+    {
+      "source": "company-15",
+      "target": "contract-05",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2023-06-05"
+    },
+    {
+      "source": "person-26",
+      "target": "contract-05",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2023-06-05"
+    },
+    {
+      "source": "person-21",
+      "target": "contract-05",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2023-06-02"
+      }
+    },
+    {
+      "source": "person-16",
+      "target": "contract-05",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2023-05-30"
+      }
+    },
+    {
+      "source": "person-13",
+      "target": "contract-05",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2023-05-27"
+      }
+    },
+    {
+      "source": "dept-01",
+      "target": "contract-05",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-05",
+      "target": "product-06",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 4
+      }
+    },
+    {
+      "source": "contract-05",
+      "target": "product-13",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 34
+      }
+    },
+    {
+      "source": "contract-05",
+      "target": "payment-03",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-05",
+      "target": "project-10",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-05",
+      "target": "regulation-04",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-06",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2025-07-25"
+    },
+    {
+      "source": "company-03",
+      "target": "contract-06",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2025-07-25"
+    },
+    {
+      "source": "company-13",
+      "target": "contract-06",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2025-07-25"
+    },
+    {
+      "source": "person-12",
+      "target": "contract-06",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-07-25"
+    },
+    {
+      "source": "person-25",
+      "target": "contract-06",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2025-07-22"
+      }
+    },
+    {
+      "source": "person-18",
+      "target": "contract-06",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2025-07-19"
+      }
+    },
+    {
+      "source": "person-07",
+      "target": "contract-06",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2025-07-16"
+      }
+    },
+    {
+      "source": "dept-01",
+      "target": "contract-06",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-06",
+      "target": "product-12",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 28
+      }
+    },
+    {
+      "source": "contract-06",
+      "target": "product-02",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 11
+      }
+    },
+    {
+      "source": "contract-06",
+      "target": "payment-05",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-06",
+      "target": "project-02",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-06",
+      "target": "regulation-02",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-17",
+      "target": "contract-06",
+      "type": "guarantees",
+      "weight": 0.6,
+      "properties": {
+        "guarantee_type": "连带责任保证"
+      },
+      "valid_from": "2025-07-25"
+    },
+    {
+      "source": "company-01",
+      "target": "contract-07",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-01-25"
+    },
+    {
+      "source": "company-08",
+      "target": "contract-07",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-01-25"
+    },
+    {
+      "source": "person-16",
+      "target": "contract-07",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-01-25"
+    },
+    {
+      "source": "person-14",
+      "target": "contract-07",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-01-22"
+      }
+    },
+    {
+      "source": "person-24",
+      "target": "contract-07",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-01-19"
+      }
+    },
+    {
+      "source": "person-07",
+      "target": "contract-07",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-01-16"
+      }
+    },
+    {
+      "source": "dept-02",
+      "target": "contract-07",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-07",
+      "target": "product-05",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 26
+      }
+    },
+    {
+      "source": "contract-07",
+      "target": "product-06",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 47
+      }
+    },
+    {
+      "source": "contract-07",
+      "target": "payment-04",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-07",
+      "target": "project-06",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-07",
+      "target": "regulation-05",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-08",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-07-10"
+    },
+    {
+      "source": "company-04",
+      "target": "contract-08",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-07-10"
+    },
+    {
+      "source": "person-20",
+      "target": "contract-08",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-07-10"
+    },
+    {
+      "source": "person-03",
+      "target": "contract-08",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-07-07"
+      }
+    },
+    {
+      "source": "person-01",
+      "target": "contract-08",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-07-04"
+      }
+    },
+    {
+      "source": "person-01",
+      "target": "contract-08",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-07-01"
+      }
+    },
+    {
+      "source": "dept-04",
+      "target": "contract-08",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-08",
+      "target": "product-10",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 38
+      }
+    },
+    {
+      "source": "contract-08",
+      "target": "payment-03",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-08",
+      "target": "regulation-01",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-09",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2023-08-13"
+    },
+    {
+      "source": "company-03",
+      "target": "contract-09",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2023-08-13"
+    },
+    {
+      "source": "person-27",
+      "target": "contract-09",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2023-08-13"
+    },
+    {
+      "source": "person-02",
+      "target": "contract-09",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2023-08-10"
+      }
+    },
+    {
+      "source": "person-24",
+      "target": "contract-09",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2023-08-07"
+      }
+    },
+    {
+      "source": "person-22",
+      "target": "contract-09",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2023-08-04"
+      }
+    },
+    {
+      "source": "dept-06",
+      "target": "contract-09",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-09",
+      "target": "product-12",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 43
+      }
+    },
+    {
+      "source": "contract-09",
+      "target": "payment-02",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-09",
+      "target": "regulation-03",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-11",
+      "target": "contract-09",
+      "type": "guarantees",
+      "weight": 0.6,
+      "properties": {
+        "guarantee_type": "连带责任保证"
+      },
+      "valid_from": "2023-08-13"
+    },
+    {
+      "source": "company-01",
+      "target": "contract-10",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-05-22"
+    },
+    {
+      "source": "company-07",
+      "target": "contract-10",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-05-22"
+    },
+    {
+      "source": "company-14",
+      "target": "contract-10",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2024-05-22"
+    },
+    {
+      "source": "person-06",
+      "target": "contract-10",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-05-22"
+    },
+    {
+      "source": "person-09",
+      "target": "contract-10",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-05-19"
+      }
+    },
+    {
+      "source": "person-24",
+      "target": "contract-10",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-05-16"
+      }
+    },
+    {
+      "source": "person-01",
+      "target": "contract-10",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-05-13"
+      }
+    },
+    {
+      "source": "dept-06",
+      "target": "contract-10",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-10",
+      "target": "product-07",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 40
+      }
+    },
+    {
+      "source": "contract-10",
+      "target": "product-07",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 16
+      }
+    },
+    {
+      "source": "contract-10",
+      "target": "payment-05",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-10",
+      "target": "project-06",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-10",
+      "target": "regulation-03",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-11",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2023-07-16"
+    },
+    {
+      "source": "company-11",
+      "target": "contract-11",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2023-07-16"
+    },
+    {
+      "source": "company-06",
+      "target": "contract-11",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2023-07-16"
+    },
+    {
+      "source": "person-30",
+      "target": "contract-11",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2023-07-16"
+    },
+    {
+      "source": "person-22",
+      "target": "contract-11",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2023-07-13"
+      }
+    },
+    {
+      "source": "person-03",
+      "target": "contract-11",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2023-07-10"
+      }
+    },
+    {
+      "source": "person-13",
+      "target": "contract-11",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2023-07-07"
+      }
+    },
+    {
+      "source": "dept-07",
+      "target": "contract-11",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-11",
+      "target": "product-09",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 19
+      }
+    },
+    {
+      "source": "contract-11",
+      "target": "payment-03",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-11",
+      "target": "regulation-05",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-12",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2023-11-16"
+    },
+    {
+      "source": "company-07",
+      "target": "contract-12",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2023-11-16"
+    },
+    {
+      "source": "person-13",
+      "target": "contract-12",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2023-11-16"
+    },
+    {
+      "source": "person-27",
+      "target": "contract-12",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2023-11-13"
+      }
+    },
+    {
+      "source": "person-27",
+      "target": "contract-12",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2023-11-10"
+      }
+    },
+    {
+      "source": "person-06",
+      "target": "contract-12",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2023-11-07"
+      }
+    },
+    {
+      "source": "dept-05",
+      "target": "contract-12",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-12",
+      "target": "product-13",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 47
+      }
+    },
+    {
+      "source": "contract-12",
+      "target": "product-11",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 31
+      }
+    },
+    {
+      "source": "contract-12",
+      "target": "payment-02",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-12",
+      "target": "regulation-03",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-14",
+      "target": "contract-12",
+      "type": "guarantees",
+      "weight": 0.6,
+      "properties": {
+        "guarantee_type": "连带责任保证"
+      },
+      "valid_from": "2023-11-16"
+    },
+    {
+      "source": "company-01",
+      "target": "contract-13",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-05-14"
+    },
+    {
+      "source": "company-18",
+      "target": "contract-13",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-05-14"
+    },
+    {
+      "source": "company-09",
+      "target": "contract-13",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2024-05-14"
+    },
+    {
+      "source": "person-27",
+      "target": "contract-13",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-05-14"
+    },
+    {
+      "source": "person-20",
+      "target": "contract-13",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-05-11"
+      }
+    },
+    {
+      "source": "person-11",
+      "target": "contract-13",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-05-08"
+      }
+    },
+    {
+      "source": "person-10",
+      "target": "contract-13",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-05-05"
+      }
+    },
+    {
+      "source": "dept-04",
+      "target": "contract-13",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-13",
+      "target": "product-08",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 20
+      }
+    },
+    {
+      "source": "contract-13",
+      "target": "payment-02",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-13",
+      "target": "regulation-05",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-14",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-09-14"
+    },
+    {
+      "source": "company-18",
+      "target": "contract-14",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-09-14"
+    },
+    {
+      "source": "person-02",
+      "target": "contract-14",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-09-14"
+    },
+    {
+      "source": "person-28",
+      "target": "contract-14",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-09-11"
+      }
+    },
+    {
+      "source": "person-18",
+      "target": "contract-14",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-09-08"
+      }
+    },
+    {
+      "source": "person-20",
+      "target": "contract-14",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-09-05"
+      }
+    },
+    {
+      "source": "dept-03",
+      "target": "contract-14",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-14",
+      "target": "product-08",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 17
+      }
+    },
+    {
+      "source": "contract-14",
+      "target": "payment-04",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-14",
+      "target": "project-02",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-14",
+      "target": "regulation-05",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-13",
+      "target": "contract-14",
+      "type": "guarantees",
+      "weight": 0.6,
+      "properties": {
+        "guarantee_type": "连带责任保证"
+      },
+      "valid_from": "2024-09-14"
+    },
+    {
+      "source": "company-01",
+      "target": "contract-15",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2022-08-08"
+    },
+    {
+      "source": "company-17",
+      "target": "contract-15",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2022-08-08"
+    },
+    {
+      "source": "person-15",
+      "target": "contract-15",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2022-08-08"
+    },
+    {
+      "source": "person-10",
+      "target": "contract-15",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2022-08-05"
+      }
+    },
+    {
+      "source": "person-25",
+      "target": "contract-15",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2022-08-02"
+      }
+    },
+    {
+      "source": "dept-06",
+      "target": "contract-15",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-15",
+      "target": "product-10",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 33
+      }
+    },
+    {
+      "source": "contract-15",
+      "target": "payment-03",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-15",
+      "target": "regulation-02",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-16",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2025-01-17"
+    },
+    {
+      "source": "company-05",
+      "target": "contract-16",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2025-01-17"
+    },
+    {
+      "source": "company-08",
+      "target": "contract-16",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2025-01-17"
+    },
+    {
+      "source": "person-09",
+      "target": "contract-16",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-01-17"
+    },
+    {
+      "source": "person-07",
+      "target": "contract-16",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2025-01-14"
+      }
+    },
+    {
+      "source": "person-21",
+      "target": "contract-16",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2025-01-08"
+      }
+    },
+    {
+      "source": "dept-03",
+      "target": "contract-16",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-16",
+      "target": "product-11",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 10
+      }
+    },
+    {
+      "source": "contract-16",
+      "target": "product-08",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 4
+      }
+    },
+    {
+      "source": "contract-16",
+      "target": "payment-01",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-16",
+      "target": "project-04",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-16",
+      "target": "regulation-05",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-17",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-01-23"
+    },
+    {
+      "source": "company-13",
+      "target": "contract-17",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-01-23"
+    },
+    {
+      "source": "person-28",
+      "target": "contract-17",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-01-23"
+    },
+    {
+      "source": "person-12",
+      "target": "contract-17",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-01-20"
+      }
+    },
+    {
+      "source": "person-17",
+      "target": "contract-17",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-01-17"
+      }
+    },
+    {
+      "source": "person-01",
+      "target": "contract-17",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-01-14"
+      }
+    },
+    {
+      "source": "dept-04",
+      "target": "contract-17",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-17",
+      "target": "product-13",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 37
+      }
+    },
+    {
+      "source": "contract-17",
+      "target": "product-06",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 18
+      }
+    },
+    {
+      "source": "contract-17",
+      "target": "payment-05",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-17",
+      "target": "project-01",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-17",
+      "target": "regulation-01",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-20",
+      "target": "contract-17",
+      "type": "guarantees",
+      "weight": 0.6,
+      "properties": {
+        "guarantee_type": "一般保证"
+      },
+      "valid_from": "2024-01-23"
+    },
+    {
+      "source": "company-01",
+      "target": "contract-18",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2025-04-05"
+    },
+    {
+      "source": "company-05",
+      "target": "contract-18",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2025-04-05"
+    },
+    {
+      "source": "company-19",
+      "target": "contract-18",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2025-04-05"
+    },
+    {
+      "source": "person-11",
+      "target": "contract-18",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-04-05"
+    },
+    {
+      "source": "person-30",
+      "target": "contract-18",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2025-04-02"
+      }
+    },
+    {
+      "source": "person-07",
+      "target": "contract-18",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2025-03-30"
+      }
+    },
+    {
+      "source": "person-04",
+      "target": "contract-18",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2025-03-27"
+      }
+    },
+    {
+      "source": "dept-04",
+      "target": "contract-18",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-18",
+      "target": "product-01",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 11
+      }
+    },
+    {
+      "source": "contract-18",
+      "target": "product-15",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 37
+      }
+    },
+    {
+      "source": "contract-18",
+      "target": "payment-05",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-18",
+      "target": "project-05",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-18",
+      "target": "regulation-01",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-19",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-01-29"
+    },
+    {
+      "source": "company-11",
+      "target": "contract-19",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-01-29"
+    },
+    {
+      "source": "person-20",
+      "target": "contract-19",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-01-29"
+    },
+    {
+      "source": "person-28",
+      "target": "contract-19",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-01-26"
+      }
+    },
+    {
+      "source": "person-02",
+      "target": "contract-19",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-01-23"
+      }
+    },
+    {
+      "source": "person-13",
+      "target": "contract-19",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-01-20"
+      }
+    },
+    {
+      "source": "dept-02",
+      "target": "contract-19",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-19",
+      "target": "product-11",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 4
+      }
+    },
+    {
+      "source": "contract-19",
+      "target": "product-04",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 49
+      }
+    },
+    {
+      "source": "contract-19",
+      "target": "payment-03",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-19",
+      "target": "project-04",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-19",
+      "target": "regulation-02",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-20",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-08-10"
+    },
+    {
+      "source": "company-02",
+      "target": "contract-20",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-08-10"
+    },
+    {
+      "source": "person-25",
+      "target": "contract-20",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-08-10"
+    },
+    {
+      "source": "person-03",
+      "target": "contract-20",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-08-07"
+      }
+    },
+    {
+      "source": "person-07",
+      "target": "contract-20",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-08-04"
+      }
+    },
+    {
+      "source": "person-15",
+      "target": "contract-20",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-08-01"
+      }
+    },
+    {
+      "source": "dept-02",
+      "target": "contract-20",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-20",
+      "target": "product-06",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 4
+      }
+    },
+    {
+      "source": "contract-20",
+      "target": "payment-06",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-20",
+      "target": "project-05",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-20",
+      "target": "regulation-01",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-09",
+      "target": "contract-20",
+      "type": "guarantees",
+      "weight": 0.6,
+      "properties": {
+        "guarantee_type": "保证金担保"
+      },
+      "valid_from": "2024-08-10"
+    },
+    {
+      "source": "company-01",
+      "target": "contract-21",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2025-01-23"
+    },
+    {
+      "source": "company-02",
+      "target": "contract-21",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2025-01-23"
+    },
+    {
+      "source": "person-23",
+      "target": "contract-21",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-01-23"
+    },
+    {
+      "source": "person-13",
+      "target": "contract-21",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2025-01-20"
+      }
+    },
+    {
+      "source": "person-29",
+      "target": "contract-21",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2025-01-17"
+      }
+    },
+    {
+      "source": "person-16",
+      "target": "contract-21",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2025-01-14"
+      }
+    },
+    {
+      "source": "dept-01",
+      "target": "contract-21",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-21",
+      "target": "product-13",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 19
+      }
+    },
+    {
+      "source": "contract-21",
+      "target": "product-07",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 24
+      }
+    },
+    {
+      "source": "contract-21",
+      "target": "payment-04",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-21",
+      "target": "regulation-06",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-22",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2025-02-16"
+    },
+    {
+      "source": "company-03",
+      "target": "contract-22",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2025-02-16"
+    },
+    {
+      "source": "person-29",
+      "target": "contract-22",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-02-16"
+    },
+    {
+      "source": "person-26",
+      "target": "contract-22",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2025-02-13"
+      }
+    },
+    {
+      "source": "person-15",
+      "target": "contract-22",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2025-02-10"
+      }
+    },
+    {
+      "source": "person-22",
+      "target": "contract-22",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2025-02-07"
+      }
+    },
+    {
+      "source": "dept-02",
+      "target": "contract-22",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-22",
+      "target": "product-03",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 27
+      }
+    },
+    {
+      "source": "contract-22",
+      "target": "payment-06",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-22",
+      "target": "project-10",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-22",
+      "target": "regulation-02",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-23",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2022-05-13"
+    },
+    {
+      "source": "company-15",
+      "target": "contract-23",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2022-05-13"
+    },
+    {
+      "source": "company-05",
+      "target": "contract-23",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2022-05-13"
+    },
+    {
+      "source": "person-22",
+      "target": "contract-23",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2022-05-13"
+    },
+    {
+      "source": "person-20",
+      "target": "contract-23",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2022-05-10"
+      }
+    },
+    {
+      "source": "person-11",
+      "target": "contract-23",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2022-05-07"
+      }
+    },
+    {
+      "source": "person-06",
+      "target": "contract-23",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2022-05-04"
+      }
+    },
+    {
+      "source": "dept-06",
+      "target": "contract-23",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-23",
+      "target": "product-06",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 3
+      }
+    },
+    {
+      "source": "contract-23",
+      "target": "payment-05",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-23",
+      "target": "project-01",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-23",
+      "target": "regulation-03",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-24",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-03-13"
+    },
+    {
+      "source": "company-03",
+      "target": "contract-24",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-03-13"
+    },
+    {
+      "source": "company-06",
+      "target": "contract-24",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2024-03-13"
+    },
+    {
+      "source": "person-14",
+      "target": "contract-24",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-03-13"
+    },
+    {
+      "source": "person-28",
+      "target": "contract-24",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-03-10"
+      }
+    },
+    {
+      "source": "person-24",
+      "target": "contract-24",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-03-07"
+      }
+    },
+    {
+      "source": "person-15",
+      "target": "contract-24",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-03-04"
+      }
+    },
+    {
+      "source": "dept-01",
+      "target": "contract-24",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-24",
+      "target": "product-01",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 31
+      }
+    },
+    {
+      "source": "contract-24",
+      "target": "product-14",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 12
+      }
+    },
+    {
+      "source": "contract-24",
+      "target": "payment-01",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-24",
+      "target": "project-01",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-24",
+      "target": "regulation-02",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-25",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2024-12-21"
+    },
+    {
+      "source": "company-08",
+      "target": "contract-25",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2024-12-21"
+    },
+    {
+      "source": "person-20",
+      "target": "contract-25",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-12-21"
+    },
+    {
+      "source": "person-28",
+      "target": "contract-25",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2024-12-18"
+      }
+    },
+    {
+      "source": "person-21",
+      "target": "contract-25",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2024-12-15"
+      }
+    },
+    {
+      "source": "person-18",
+      "target": "contract-25",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2024-12-12"
+      }
+    },
+    {
+      "source": "dept-06",
+      "target": "contract-25",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-25",
+      "target": "product-03",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 41
+      }
+    },
+    {
+      "source": "contract-25",
+      "target": "payment-02",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-25",
+      "target": "project-07",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-25",
+      "target": "regulation-04",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-26",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2022-05-31"
+    },
+    {
+      "source": "company-02",
+      "target": "contract-26",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2022-05-31"
+    },
+    {
+      "source": "person-10",
+      "target": "contract-26",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2022-05-31"
+    },
+    {
+      "source": "person-19",
+      "target": "contract-26",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2022-05-28"
+      }
+    },
+    {
+      "source": "person-28",
+      "target": "contract-26",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2022-05-25"
+      }
+    },
+    {
+      "source": "person-21",
+      "target": "contract-26",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2022-05-22"
+      }
+    },
+    {
+      "source": "dept-06",
+      "target": "contract-26",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-26",
+      "target": "product-15",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 13
+      }
+    },
+    {
+      "source": "contract-26",
+      "target": "payment-03",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-26",
+      "target": "regulation-05",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-20",
+      "target": "contract-26",
+      "type": "guarantees",
+      "weight": 0.6,
+      "properties": {
+        "guarantee_type": "连带责任保证"
+      },
+      "valid_from": "2022-05-31"
+    },
+    {
+      "source": "company-01",
+      "target": "contract-27",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2022-03-14"
+    },
+    {
+      "source": "company-11",
+      "target": "contract-27",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2022-03-14"
+    },
+    {
+      "source": "company-03",
+      "target": "contract-27",
+      "type": "party_to",
+      "weight": 0.7,
+      "properties": {
+        "role": "丙方"
+      },
+      "valid_from": "2022-03-14"
+    },
+    {
+      "source": "person-17",
+      "target": "contract-27",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2022-03-14"
+    },
+    {
+      "source": "person-04",
+      "target": "contract-27",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2022-03-11"
+      }
+    },
+    {
+      "source": "person-14",
+      "target": "contract-27",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2022-03-08"
+      }
+    },
+    {
+      "source": "person-13",
+      "target": "contract-27",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2022-03-05"
+      }
+    },
+    {
+      "source": "dept-01",
+      "target": "contract-27",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-27",
+      "target": "product-14",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 19
+      }
+    },
+    {
+      "source": "contract-27",
+      "target": "payment-01",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-27",
+      "target": "regulation-01",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-28",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2025-02-18"
+    },
+    {
+      "source": "company-16",
+      "target": "contract-28",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2025-02-18"
+    },
+    {
+      "source": "person-23",
+      "target": "contract-28",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-02-18"
+    },
+    {
+      "source": "person-04",
+      "target": "contract-28",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2025-02-15"
+      }
+    },
+    {
+      "source": "person-21",
+      "target": "contract-28",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2025-02-12"
+      }
+    },
+    {
+      "source": "person-04",
+      "target": "contract-28",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2025-02-09"
+      }
+    },
+    {
+      "source": "dept-06",
+      "target": "contract-28",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-28",
+      "target": "product-04",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 39
+      }
+    },
+    {
+      "source": "contract-28",
+      "target": "product-02",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 35
+      }
+    },
+    {
+      "source": "contract-28",
+      "target": "payment-05",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-28",
+      "target": "project-08",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-28",
+      "target": "regulation-03",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-29",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2025-03-05"
+    },
+    {
+      "source": "company-11",
+      "target": "contract-29",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2025-03-05"
+    },
+    {
+      "source": "person-03",
+      "target": "contract-29",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-03-05"
+    },
+    {
+      "source": "person-14",
+      "target": "contract-29",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2025-03-02"
+      }
+    },
+    {
+      "source": "person-18",
+      "target": "contract-29",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2025-02-27"
+      }
+    },
+    {
+      "source": "person-01",
+      "target": "contract-29",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2025-02-24"
+      }
+    },
+    {
+      "source": "dept-01",
+      "target": "contract-29",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-29",
+      "target": "product-08",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 3
+      }
+    },
+    {
+      "source": "contract-29",
+      "target": "payment-03",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-29",
+      "target": "project-09",
+      "type": "about_project",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "contract-29",
+      "target": "regulation-05",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-01",
+      "target": "contract-30",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "甲方"
+      },
+      "valid_from": "2022-05-24"
+    },
+    {
+      "source": "company-02",
+      "target": "contract-30",
+      "type": "party_to",
+      "weight": 1.0,
+      "properties": {
+        "role": "乙方"
+      },
+      "valid_from": "2022-05-24"
+    },
+    {
+      "source": "person-10",
+      "target": "contract-30",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2022-05-24"
+    },
+    {
+      "source": "person-19",
+      "target": "contract-30",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过",
+        "comment": "条款合规性审查通过",
+        "approved_on": "2022-05-21"
+      }
+    },
+    {
+      "source": "person-11",
+      "target": "contract-30",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "财务复审",
+        "sequence": 2,
+        "decision": "通过",
+        "comment": "付款条款与预算审核通过",
+        "approved_on": "2022-05-18"
+      }
+    },
+    {
+      "source": "person-01",
+      "target": "contract-30",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "管理层终审",
+        "sequence": 3,
+        "decision": "通过",
+        "comment": "同意签署",
+        "approved_on": "2022-05-15"
+      }
+    },
+    {
+      "source": "dept-08",
+      "target": "contract-30",
+      "type": "governs",
+      "weight": 0.6,
+      "properties": {}
+    },
+    {
+      "source": "contract-30",
+      "target": "product-07",
+      "type": "involves_product",
+      "weight": 0.9,
+      "properties": {
+        "quantity": 42
+      }
+    },
+    {
+      "source": "contract-30",
+      "target": "payment-03",
+      "type": "follows_payment_terms",
+      "weight": 0.5,
+      "properties": {}
+    },
+    {
+      "source": "contract-30",
+      "target": "regulation-01",
+      "type": "references_regulation",
+      "weight": 0.4,
+      "properties": {}
+    },
+    {
+      "source": "company-14",
+      "target": "contract-30",
+      "type": "guarantees",
+      "weight": 0.6,
+      "properties": {
+        "guarantee_type": "保证金担保"
+      },
+      "valid_from": "2022-05-24"
+    },
+    {
+      "source": "amendment-01",
+      "target": "contract-01",
+      "type": "amends",
+      "weight": 1.0,
+      "properties": {
+        "change_summary": "价格调整补充协议"
+      },
+      "valid_from": "2024-09-15"
+    },
+    {
+      "source": "person-29",
+      "target": "amendment-01",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-09-15"
+    },
+    {
+      "source": "person-13",
+      "target": "amendment-01",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过"
+      }
+    },
+    {
+      "source": "amendment-02",
+      "target": "contract-02",
+      "type": "amends",
+      "weight": 1.0,
+      "properties": {
+        "change_summary": "延期履行补充协议"
+      },
+      "valid_from": "2025-03-27"
+    },
+    {
+      "source": "person-12",
+      "target": "amendment-02",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-03-27"
+    },
+    {
+      "source": "person-13",
+      "target": "amendment-02",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过"
+      }
+    },
+    {
+      "source": "amendment-03",
+      "target": "contract-03",
+      "type": "amends",
+      "weight": 1.0,
+      "properties": {
+        "change_summary": "变更标的规格补充协议"
+      },
+      "valid_from": "2025-06-29"
+    },
+    {
+      "source": "person-24",
+      "target": "amendment-03",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-06-29"
+    },
+    {
+      "source": "person-26",
+      "target": "amendment-03",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过"
+      }
+    },
+    {
+      "source": "amendment-04",
+      "target": "contract-04",
+      "type": "amends",
+      "weight": 1.0,
+      "properties": {
+        "change_summary": "增加服务范围补充协议"
+      },
+      "valid_from": "2025-04-27"
+    },
+    {
+      "source": "person-13",
+      "target": "amendment-04",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-04-27"
+    },
+    {
+      "source": "person-21",
+      "target": "amendment-04",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过"
+      }
+    },
+    {
+      "source": "amendment-05",
+      "target": "contract-05",
+      "type": "amends",
+      "weight": 1.0,
+      "properties": {
+        "change_summary": "付款计划变更补充协议"
+      },
+      "valid_from": "2025-11-06"
+    },
+    {
+      "source": "person-07",
+      "target": "amendment-05",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-11-06"
+    },
+    {
+      "source": "person-04",
+      "target": "amendment-05",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过"
+      }
+    },
+    {
+      "source": "amendment-06",
+      "target": "contract-06",
+      "type": "amends",
+      "weight": 1.0,
+      "properties": {
+        "change_summary": "续展期限补充协议"
+      },
+      "valid_from": "2024-03-19"
+    },
+    {
+      "source": "person-26",
+      "target": "amendment-06",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-03-19"
+    },
+    {
+      "source": "person-05",
+      "target": "amendment-06",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过"
+      }
+    },
+    {
+      "source": "amendment-07",
+      "target": "contract-07",
+      "type": "amends",
+      "weight": 1.0,
+      "properties": {
+        "change_summary": "保密范围扩展补充协议"
+      },
+      "valid_from": "2025-09-07"
+    },
+    {
+      "source": "person-27",
+      "target": "amendment-07",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2025-09-07"
+    },
+    {
+      "source": "person-16",
+      "target": "amendment-07",
+      "type": "approves",
+      "weight": 0.6,
+      "properties": {
+        "stage": "法务初审",
+        "sequence": 1,
+        "decision": "通过"
+      }
+    },
+    {
+      "source": "amendment-08",
+      "target": "contract-08",
+      "type": "amends",
+      "weight": 1.0,
+      "properties": {
+        "change_summary": "违约责任修订补充协议"
+      },
+      "valid_from": "2024-04-29"
+    },
+    {
+      "source": "person-03",
+      "target": "amendment-08",
+      "type": "signs",
+      "weight": 0.8,
+      "properties": {},
+      "valid_from": "2024-04-29"
+    },
+    {
+      "source": "contract-26",
+      "target": "contract-01",
+      "type": "renews",
+      "weight": 0.7,
+      "properties": {
+        "renewal_note": "到期续签"
+      }
+    },
+    {
+      "source": "contract-27",
+      "target": "contract-02",
+      "type": "renews",
+      "weight": 0.7,
+      "properties": {
+        "renewal_note": "到期续签"
+      }
+    },
+    {
+      "source": "contract-28",
+      "target": "contract-03",
+      "type": "renews",
+      "weight": 0.7,
+      "properties": {
+        "renewal_note": "到期续签"
+      }
+    },
+    {
+      "source": "contract-29",
+      "target": "contract-04",
+      "type": "renews",
+      "weight": 0.7,
+      "properties": {
+        "renewal_note": "到期续签"
+      }
+    },
+    {
+      "source": "contract-30",
+      "target": "contract-05",
+      "type": "renews",
+      "weight": 0.7,
+      "properties": {
+        "renewal_note": "到期续签"
+      }
+    }
+  ]
+}

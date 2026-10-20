@@ -28,6 +28,7 @@ coverage.xml
 *.p12
 *.pfx
 secrets/
+examples/deepseek_key.local.ps1
 *.secret
 config/secrets.yaml
 config/secrets.yml
