@@ -122,9 +122,9 @@ function PairRow({
             }}
           >
             {merging ? <Loader2 size={12} className="animate-spin" /> : <GitMerge size={12} />}
-            <span>Merge</span>
+            <span>合并</span>
           </button>
-          <button onClick={onDismiss} style={iconBtnStyle} title="Dismiss">
+          <button onClick={onDismiss} style={iconBtnStyle} title="忽略">
             <X size={13} />
           </button>
         </div>
@@ -134,8 +134,8 @@ function PairRow({
       {expanded ? (
         <div style={{ marginTop: 12, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
           {[
-            { label: "Primary (keep)", entity: pair.a, accentColor: "#4aa3ff" },
-            { label: "Duplicate (remove)", entity: pair.b, accentColor: "#ff7b72" },
+            { label: "主实体（保留）", entity: pair.a, accentColor: "#4aa3ff" },
+            { label: "重复实体（移除）", entity: pair.b, accentColor: "#ff7b72" },
           ].map(({ label, entity, accentColor }) => (
             <div key={entity.id} style={{ ...diffCardStyle, borderColor: `${accentColor}33` }}>
               <div style={{ color: accentColor, fontSize: 10, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: 6 }}>
@@ -172,7 +172,7 @@ export function EntityResolutionTab() {
       });
       if (!res.ok) {
         const err = await res.json().catch(() => ({}));
-        throw new Error((err as Record<string, string>).detail ?? `Scan failed (${res.status})`);
+        throw new Error((err as Record<string, string>).detail ?? `扫描失败（${res.status}）`);
       }
       const data = await res.json();
       const rawDuplicates: RawDuplicateItem[] = Array.isArray(data.duplicates)
@@ -180,12 +180,12 @@ export function EntityResolutionTab() {
         : [];
       const parsed = parseDuplicates(rawDuplicates);
       setPairs(parsed);
-      logEvent("import", `Dedup scan found ${parsed.length} flagged pair${parsed.length !== 1 ? "s" : ""} (threshold ${threshold.toFixed(2)})`, {
+      logEvent("import", `去重扫描发现 ${parsed.length} 组疑似重复（阈值 ${threshold.toFixed(2)}）`, {
         threshold,
         flagged: parsed.length,
       });
     } catch (err) {
-      setScanError(err instanceof Error ? err.message : "Scan failed");
+      setScanError(err instanceof Error ? err.message : "扫描失败");
     } finally {
       setScanning(false);
     }
@@ -199,19 +199,19 @@ export function EntityResolutionTab() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ primary_id: primaryId, duplicate_ids: [duplicateId] }),
       });
-      if (!res.ok) throw new Error(`Merge failed (${res.status})`);
+      if (!res.ok) throw new Error(`合并失败（${res.status}）`);
       const data = await res.json();
       if (res.status === 207) {
-        setScanError(data.message || "Warning: Partial merge.");
+        setScanError(data.message || "警告：部分合并。");
       }
-      logEvent("merge", `Merged ${duplicateId} → ${primaryId} · ${data.edges_updated ?? 0} edges redirected`, {
+      logEvent("merge", `已合并 ${duplicateId} → ${primaryId} · 重定向 ${data.edges_updated ?? 0} 条边`, {
         primary: primaryId,
         duplicate: duplicateId,
         edgesUpdated: data.edges_updated,
       });
       setPairs((prev) => prev.filter((p) => !(p.a.id === primaryId && p.b.id === duplicateId)));
     } catch (err) {
-      setScanError(err instanceof Error ? err.message : "Merge failed");
+      setScanError(err instanceof Error ? err.message : "合并失败");
     }
   }, []);
 
@@ -226,8 +226,8 @@ export function EntityResolutionTab() {
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <ScanSearch size={18} color="#f2b66d" />
           <div>
-            <div style={{ color: "#ebf3ff", fontSize: 16, fontWeight: 700 }}>Entity Resolution</div>
-            <div style={{ color: "#8b949e", fontSize: 12 }}>Detect and merge duplicate entities in the knowledge graph</div>
+            <div style={{ color: "#ebf3ff", fontSize: 16, fontWeight: 700 }}>实体消歧</div>
+            <div style={{ color: "#8b949e", fontSize: 12 }}>检测并合并知识图谱中的重复实体</div>
           </div>
         </div>
       </div>
@@ -237,7 +237,7 @@ export function EntityResolutionTab() {
         <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
           <div style={{ flex: 1, minWidth: 240 }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
-              <label style={{ color: "#c6d4e3", fontSize: 12, fontWeight: 600 }}>Similarity Threshold</label>
+              <label style={{ color: "#c6d4e3", fontSize: 12, fontWeight: 600 }}>相似度阈值</label>
               <span style={{ color: "#f2b66d", fontSize: 12, fontWeight: 700 }}>{threshold.toFixed(2)}</span>
             </div>
             <input
@@ -250,8 +250,8 @@ export function EntityResolutionTab() {
               style={{ width: "100%", accentColor: "#f2b66d", cursor: "pointer" }}
             />
             <div style={{ display: "flex", justifyContent: "space-between", color: "#6a7f97", fontSize: 10, marginTop: 2 }}>
-              <span>More results (0.50)</span>
-              <span>Fewer, higher confidence (0.99)</span>
+              <span>结果更多（0.50）</span>
+              <span>结果更少、置信度更高（0.99）</span>
             </div>
           </div>
           <button
@@ -260,7 +260,7 @@ export function EntityResolutionTab() {
             style={scanBtnStyle}
           >
             {scanning ? <Loader2 size={14} className="animate-spin" /> : <ScanSearch size={14} />}
-            <span>{scanning ? "Scanning…" : "Run Dedup Scan"}</span>
+            <span>{scanning ? "扫描中…" : "运行去重扫描"}</span>
           </button>
         </div>
         {scanError ? (
@@ -275,9 +275,9 @@ export function EntityResolutionTab() {
             <>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
                 <div style={{ color: "#8b949e", fontSize: 12, fontWeight: 600 }}>
-                  {pairs.length} flagged pair{pairs.length !== 1 ? "s" : ""}
+                  {pairs.length} 组疑似重复
                 </div>
-                <button onClick={() => setPairs([])} style={clearAllBtnStyle}>Clear all</button>
+                <button onClick={() => setPairs([])} style={clearAllBtnStyle}>全部清除</button>
               </div>
               {pairs.map((pair, index) => (
                 <PairRow
@@ -292,10 +292,10 @@ export function EntityResolutionTab() {
             <div style={emptyStateStyle}>
               <ScanSearch size={36} color="rgba(242,182,109,0.15)" />
               <div style={{ color: "#8b949e", fontSize: 14, marginTop: 12, fontWeight: 500 }}>
-                No flagged pairs
+                暂无疑似重复
               </div>
               <div style={{ color: "#6a7f97", fontSize: 12, marginTop: 4, textAlign: "center", maxWidth: 280 }}>
-                Set a similarity threshold and run a dedup scan to detect potential duplicates.
+                设置相似度阈值并运行去重扫描，即可检测潜在的重复实体。
               </div>
             </div>
           )}
@@ -305,7 +305,7 @@ export function EntityResolutionTab() {
         {mergeHistory.length > 0 ? (
           <div style={historyPanelStyle}>
             <div style={{ color: "#8b949e", fontSize: 11, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: 10 }}>
-              Merge History
+              合并历史
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
               {mergeHistory.map((entry) => (

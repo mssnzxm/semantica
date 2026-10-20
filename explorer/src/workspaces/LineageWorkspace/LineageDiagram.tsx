@@ -77,17 +77,17 @@ export function LineageDiagram() {
 
         if (!res.ok) {
           const text = await res.text();
-          throw new Error(`HTTP ${res.status}: API Route missing or failed. ${text.substring(0, 100)}`);
+          throw new Error(`HTTP ${res.status}：API 路由缺失或失败。${text.substring(0, 100)}`);
         }
 
         const contentType = res.headers.get("content-type");
         if (!contentType || !contentType.includes("application/json")) {
-          throw new Error("Backend returned non-JSON response (likely an HTML fallback).");
+          throw new Error("后端返回了非 JSON 响应（可能是 HTML 回退页面）。");
         }
 
         const data = await res.json();
         if (res.status === 207) {
-          setError(data.message || "Warning: Partial success loading lineage.");
+          setError(data.message || "警告：血缘部分加载成功。");
         }
 
         const counters: Record<string, number> = { "group_agent": 0, "group_activity": 0, "group_entity": 0 };
@@ -119,7 +119,7 @@ export function LineageDiagram() {
           setEdges(mappedEdges);
         }
       } catch (err) {
-        setError(err instanceof Error ? err.message : "Failed to load lineage.");
+        setError(err instanceof Error ? err.message : "血缘加载失败。");
       }
     };
     void fetchLineage();
@@ -132,25 +132,25 @@ export function LineageDiagram() {
 
       {/* Toolbar */}
       <div style={{ position: "absolute", top: 14, left: 14, right: 14, zIndex: 10, display: "flex", gap: 8, alignItems: "center", background: "rgba(4,10,18,0.88)", backdropFilter: "blur(14px)", padding: "8px 12px", borderRadius: 12, border: "1px solid rgba(74,163,255,0.16)", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }}>
-        <span className="ws-eyebrow" style={{ color: "var(--ws-accent, #4aa3ff)", marginRight: 4 }}>PROV-O Lineage</span>
+        <span className="ws-eyebrow" style={{ color: "var(--ws-accent, #4aa3ff)", marginRight: 4 }}>PROV-O 血缘</span>
         <input
           className="ws-input"
           type="text"
-          placeholder="Enter Node ID…"
+          placeholder="输入节点 ID…"
           value={searchId}
           onChange={(e) => setSearchId(e.target.value)}
           onKeyDown={(e) => { if (e.key === "Enter") setActiveId(searchId); }}
           style={{ width: 200, padding: "6px 10px", fontSize: 12 }}
         />
         <button className="ws-btn ws-btn--primary" style={{ padding: "6px 12px" }} onClick={() => setActiveId(searchId)}>
-          Trace
+          追踪
         </button>
         <div style={{ flex: 1 }} />
         <button className="ws-btn ws-btn--ghost" style={{ padding: "6px 12px", fontSize: 11 }} disabled={!activeId} onClick={() => void downloadReport("json")}>
-          Export JSON
+          导出 JSON
         </button>
         <button className="ws-btn ws-btn--ghost" style={{ padding: "6px 12px", fontSize: 11 }} disabled={!activeId} onClick={() => void downloadReport("markdown")}>
-          Export MD
+          导出 MD
         </button>
       </div>
 
@@ -168,8 +168,8 @@ export function LineageDiagram() {
       ) : (
         <div className="ws-empty" style={{ height: "100%", paddingTop: 72 }}>
           <div className="ws-empty-icon"><Link2 size={36} color="var(--ws-accent)" /></div>
-          <div className="ws-empty-title">PROV-O Lineage Viewer</div>
-          <div className="ws-empty-body">Enter a Node ID in the toolbar above and click Trace to view its W3C PROV-O lineage diagram.</div>
+          <div className="ws-empty-title">PROV-O 血缘查看器</div>
+          <div className="ws-empty-body">在上方工具栏输入节点 ID 并点击"追踪"，即可查看其 W3C PROV-O 血缘图。</div>
         </div>
       )}
     </div>

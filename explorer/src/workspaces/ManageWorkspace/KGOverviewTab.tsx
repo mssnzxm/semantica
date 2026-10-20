@@ -81,20 +81,20 @@ export function KGOverviewTab() {
         fetch("/api/graph/nodes?limit=500"),
       ]);
 
-      if (!statsRes.ok) throw new Error(`Stats fetch failed (${statsRes.status})`);
-      if (!nodesRes.ok) throw new Error(`Nodes fetch failed (${nodesRes.status})`);
+      if (!statsRes.ok) throw new Error(`统计获取失败（${statsRes.status}）`);
+      if (!nodesRes.ok) throw new Error(`节点获取失败（${nodesRes.status}）`);
 
       const statsData: KGStats = await statsRes.json();
       setStats(statsData);
       if (statsRes.status === 207) {
-        setError((statsData as any).message || "Warning: Partial success loading stats.");
+        setError((statsData as any).message || "警告：统计数据部分加载成功。");
       }
 
       const nodesData: NodeListResponse = await nodesRes.json();
       const nodes = nodesData.nodes ?? [];
       setNodeTypeMap(buildTypeMap(nodes, "type"));
       if (nodesRes.status === 207) {
-        const nodesMessage = (nodesData as any).message || "Warning: Partial success loading nodes.";
+        const nodesMessage = (nodesData as any).message || "警告：节点部分加载成功。";
         setError((prev) => (prev ? `${prev} ${nodesMessage}` : nodesMessage));
       }
 
@@ -115,7 +115,7 @@ export function KGOverviewTab() {
         setTopNodes(sorted);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to load graph overview. Ensure the server is running.");
+      setError(err instanceof Error ? err.message : "知识图谱总览加载失败。请确认服务器正在运行。");
     } finally {
       setLoading(false);
     }
@@ -134,14 +134,14 @@ export function KGOverviewTab() {
           fetch("/api/graph/nodes?limit=500"),
         ]);
 
-        if (!statsRes.ok) throw new Error(`Stats fetch failed (${statsRes.status})`);
-        if (!nodesRes.ok) throw new Error(`Nodes fetch failed (${nodesRes.status})`);
+        if (!statsRes.ok) throw new Error(`统计获取失败（${statsRes.status}）`);
+        if (!nodesRes.ok) throw new Error(`节点获取失败（${nodesRes.status}）`);
 
         const statsData: KGStats = await statsRes.json();
         if (!ignore) {
           setStats(statsData);
           if (statsRes.status === 207) {
-            setError((statsData as { message?: string }).message || "Warning: Partial success loading stats.");
+            setError((statsData as { message?: string }).message || "警告：统计数据部分加载成功。");
           }
         }
 
@@ -150,7 +150,7 @@ export function KGOverviewTab() {
         if (!ignore) {
           setNodeTypeMap(buildTypeMap(nodes, "type"));
           if (nodesRes.status === 207) {
-            const nodesMessage = (nodesData as { message?: string }).message || "Warning: Partial success loading nodes.";
+            const nodesMessage = (nodesData as { message?: string }).message || "警告：节点部分加载成功。";
             setError((prev) => (prev ? `${prev} ${nodesMessage}` : nodesMessage));
           }
         }
@@ -172,7 +172,7 @@ export function KGOverviewTab() {
           if (!ignore) setTopNodes(sorted);
         }
       } catch (err) {
-        if (!ignore) setError(err instanceof Error ? err.message : "Failed to load graph overview. Ensure the server is running.");
+        if (!ignore) setError(err instanceof Error ? err.message : "知识图谱总览加载失败。请确认服务器正在运行。");
       } finally {
         if (!ignore) setLoading(false);
       }
@@ -190,9 +190,9 @@ export function KGOverviewTab() {
   const totalEdges = stats?.edge_count ?? 0;
 
   const statCards = [
-    { label: "Nodes",   value: totalNodes.toLocaleString(), color: "var(--ws-accent)",  sub: `${nodeTypeEntries.length} types` },
-    { label: "Edges",   value: totalEdges.toLocaleString(), color: "var(--ws-green)",   sub: `${edgeTypeEntries.length} rel. types` },
-    { label: "Density", value: totalNodes > 1 ? ((totalEdges / (totalNodes * (totalNodes - 1))) * 100).toFixed(3) + "%" : "—", color: "var(--ws-purple)", sub: "graph density" },
+    { label: "节点",   value: totalNodes.toLocaleString(), color: "var(--ws-accent)",  sub: `${nodeTypeEntries.length} 种类型` },
+    { label: "边",   value: totalEdges.toLocaleString(), color: "var(--ws-green)",   sub: `${edgeTypeEntries.length} 种关系类型` },
+    { label: "密度", value: totalNodes > 1 ? ((totalEdges / (totalNodes * (totalNodes - 1))) * 100).toFixed(3) + "%" : "—", color: "var(--ws-purple)", sub: "图密度" },
   ];
 
   return (
@@ -210,13 +210,13 @@ export function KGOverviewTab() {
             <Network size={16} />
           </div>
           <div>
-            <div style={{ color: "var(--ws-text)", fontSize: 15, fontWeight: 700, lineHeight: 1 }}>KG Overview</div>
-            <div className="ws-body" style={{ fontSize: 11, marginTop: 2 }}>Node/edge counts, type distributions, and top connected nodes</div>
+            <div style={{ color: "var(--ws-text)", fontSize: 15, fontWeight: 700, lineHeight: 1 }}>知识图谱总览</div>
+            <div className="ws-body" style={{ fontSize: 11, marginTop: 2 }}>节点/边数量、类型分布及连接度最高的节点</div>
           </div>
         </div>
         <button className="ws-btn ws-btn--ghost" onClick={() => void fetchOverview()} disabled={loading} style={{ padding: "6px 12px" }}>
           {loading ? <Loader2 size={13} className="ws-spin" /> : <RefreshCw size={13} />}
-          Refresh
+          刷新
         </button>
       </div>
 
@@ -237,13 +237,13 @@ export function KGOverviewTab() {
         {/* Type breakdowns */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
           <div className="ws-card" style={{ padding: "16px 18px", gap: 8, display: "flex", flexDirection: "column" }}>
-            <div className="ws-eyebrow" style={{ marginBottom: 4 }}>Node Type Breakdown</div>
+            <div className="ws-eyebrow" style={{ marginBottom: 4 }}>节点类型分布</div>
             {loading ? (
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                 {[80, 65, 45, 35, 25].map((w, i) => <div key={i} className="ws-skeleton" style={{ height: 10, width: `${w}%` }} />)}
               </div>
             ) : nodeTypeEntries.length === 0 ? (
-              <div className="ws-body" style={{ fontSize: 12 }}>No data — load the graph first.</div>
+              <div className="ws-body" style={{ fontSize: 12 }}>暂无数据——请先加载图谱。</div>
             ) : (
               nodeTypeEntries.slice(0, 8).map(([type, count], i) => (
                 <TypeBar key={type} label={type} count={count} total={totalNodes || 1} color={NODE_COLORS[i % NODE_COLORS.length]} />
@@ -252,13 +252,13 @@ export function KGOverviewTab() {
           </div>
 
           <div className="ws-card" style={{ padding: "16px 18px", gap: 8, display: "flex", flexDirection: "column" }}>
-            <div className="ws-eyebrow" style={{ marginBottom: 4 }}>Edge Type Breakdown</div>
+            <div className="ws-eyebrow" style={{ marginBottom: 4 }}>边类型分布</div>
             {loading ? (
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                 {[70, 55, 48, 30, 20].map((w, i) => <div key={i} className="ws-skeleton" style={{ height: 10, width: `${w}%` }} />)}
               </div>
             ) : edgeTypeEntries.length === 0 ? (
-              <div className="ws-body" style={{ fontSize: 12 }}>Edge type breakdown requires the stats endpoint to return edge_types.</div>
+              <div className="ws-body" style={{ fontSize: 12 }}>边类型分布需要统计接口返回 edge_types。</div>
             ) : (
               edgeTypeEntries.slice(0, 8).map(([type, count], i) => (
                 <TypeBar key={type} label={type} count={count} total={totalEdges || 1} color={EDGE_COLORS[i % EDGE_COLORS.length]} />
@@ -270,7 +270,7 @@ export function KGOverviewTab() {
         {/* Top connected nodes */}
         {topNodes.length > 0 && (
           <div className="ws-card" style={{ padding: "16px 18px" }}>
-            <div className="ws-eyebrow" style={{ marginBottom: 12 }}>Top Connected Nodes (by degree)</div>
+            <div className="ws-eyebrow" style={{ marginBottom: 12 }}>连接度最高的节点（按度数）</div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 8 }}>
               {topNodes.map(({ node, neighborCount }, rank) => (
                 <div key={node.id} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 12px", borderRadius: "var(--ws-radius-sm)", background: "rgba(0,0,0,0.18)", border: "1px solid var(--ws-border)" }}>

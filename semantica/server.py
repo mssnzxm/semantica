@@ -234,7 +234,9 @@ async def serve_spa(full_path: str):
     if full_path in ("", "/"):
         index_file = STATIC_DIR / "index.html"
         if index_file.is_file():
-            return FileResponse(index_file)
+            # index.html must not be cached so new frontend builds are picked
+            # up on refresh; hashed /assets/* files remain cacheable.
+            return FileResponse(index_file, headers={"Cache-Control": "no-cache"})
         return JSONResponse({
             "name": "Semantica Knowledge Explorer",
             "version": __version__,

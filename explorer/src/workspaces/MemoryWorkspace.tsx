@@ -40,7 +40,7 @@ async function fetchMemoryList(skip = 0): Promise<MemoryListResponse> {
   const response = await fetch(`/api/memories?skip=${skip}&limit=${MEMORY_PAGE_SIZE}`);
   if (!response.ok) {
     const payload = await response.json().catch(() => null);
-    throw new Error(responseMessage(payload, `Memory list failed (${response.status}).`));
+    throw new Error(responseMessage(payload, `记忆列表加载失败（${response.status}）。`));
   }
   return response.json() as Promise<MemoryListResponse>;
 }
@@ -119,7 +119,7 @@ export function MemoryWorkspace({ onDirtyChange }: MemoryWorkspaceProps = {}) {
         setSelectedBody(document.body);
       } catch (failure) {
         if (isCurrent()) {
-          setError(failure instanceof Error ? failure.message : "Memories could not be loaded.");
+          setError(failure instanceof Error ? failure.message : "记忆加载失败。");
         }
       } finally {
         if (isCurrent()) setLoading(false);
@@ -135,7 +135,7 @@ export function MemoryWorkspace({ onDirtyChange }: MemoryWorkspaceProps = {}) {
 
   const selectMemory = async (memoryId: string) => {
     if (memoryId === selectedId) return;
-    if (dirty && !window.confirm("Discard the unapplied Markdown draft and open another memory?")) return;
+    if (dirty && !window.confirm("放弃未应用的 Markdown 草稿并打开另一条记忆？")) return;
     const selectionGeneration = ++selectionGenerationRef.current;
     // Do NOT call handleDirtyChange(false) here: the editor's own onDirtyChange
     // callback fires automatically when MarkdownContentViewer re-renders with
@@ -152,7 +152,7 @@ export function MemoryWorkspace({ onDirtyChange }: MemoryWorkspaceProps = {}) {
       setSelectedBody(document.body);
     } catch (failure) {
       if (selectionGeneration === selectionGenerationRef.current) {
-        setError(failure instanceof Error ? failure.message : "The memory could not be loaded.");
+        setError(failure instanceof Error ? failure.message : "该记忆加载失败。");
       }
     } finally {
       if (selectionGeneration === selectionGenerationRef.current) {
@@ -180,7 +180,7 @@ export function MemoryWorkspace({ onDirtyChange }: MemoryWorkspaceProps = {}) {
       setNextOffset(payload.skip + payload.items.length);
     } catch (failure) {
       if (listGeneration === listGenerationRef.current) {
-        setError(failure instanceof Error ? failure.message : "More memories could not be loaded.");
+        setError(failure instanceof Error ? failure.message : "更多记忆加载失败。");
       }
     } finally {
       if (listGeneration === listGenerationRef.current) {
@@ -199,7 +199,7 @@ export function MemoryWorkspace({ onDirtyChange }: MemoryWorkspaceProps = {}) {
       setNextOffset(payload.nextOffset);
     } catch {
       if (listGeneration === listGenerationRef.current) {
-        setError("Memory was applied, but its summary could not be refreshed.");
+        setError("记忆已应用，但摘要刷新失败。");
       }
     } finally {
       if (listGeneration === listGenerationRef.current) {
@@ -221,18 +221,18 @@ export function MemoryWorkspace({ onDirtyChange }: MemoryWorkspaceProps = {}) {
 
   return (
     <div style={workspaceStyle}>
-      <aside style={listPanelStyle} aria-label="Agent memories">
+      <aside style={listPanelStyle} aria-label="智能体记忆">
         <div style={listHeaderStyle}>
           <div>
-            <div style={listTitleStyle}>AgentMemory</div>
-            <div style={listCountStyle}>{items.length} of {total} loaded</div>
+            <div style={listTitleStyle}>智能体记忆</div>
+            <div style={listCountStyle}>已加载 {items.length} / {total} 条</div>
           </div>
           <button
             type="button"
-            aria-label="Refresh memories"
+            aria-label="刷新记忆"
             onClick={() => setReloadToken((value) => value + 1)}
             disabled={loading || loadingMore || dirty}
-            title={dirty ? "Apply or cancel the current draft before refreshing" : "Refresh memories"}
+            title={dirty ? "刷新前请先应用或取消当前草稿" : "刷新记忆"}
             style={{ ...iconButtonStyle, opacity: loading || loadingMore || dirty ? 0.55 : 1 }}
           >
             <RefreshCw size={14} aria-hidden="true" />
@@ -252,26 +252,26 @@ export function MemoryWorkspace({ onDirtyChange }: MemoryWorkspaceProps = {}) {
             >
               <span style={memoryTypeStyle}>{item.type}</span>
               <span style={memoryIdStyle}>{item.id}</span>
-              <span style={memoryExcerptStyle}>{item.excerpt || "Empty memory"}</span>
+              <span style={memoryExcerptStyle}>{item.excerpt || "空记忆"}</span>
             </button>
           ))}
           {nextOffset < total ? (
             <button
               type="button"
-              aria-label="Load more memories"
+              aria-label="加载更多记忆"
               onClick={() => void loadMoreMemories()}
               disabled={loading || loadingMore}
               style={{ ...retryButtonStyle, opacity: loading || loadingMore ? 0.55 : 1 }}
             >
-              {loadingMore ? "Loading…" : "Load more"}
+              {loadingMore ? "加载中…" : "加载更多"}
             </button>
           ) : null}
           {!loading && items.length === 0 ? (
             <div style={emptyStyle}>
               <Brain size={22} aria-hidden="true" />
-              <span>No AgentMemory items are available.</span>
+              <span>暂无可用的智能体记忆条目。</span>
               <button type="button" onClick={() => setReloadToken((value) => value + 1)} style={retryButtonStyle}>
-                Refresh
+                刷新
               </button>
             </div>
           ) : null}
@@ -281,11 +281,11 @@ export function MemoryWorkspace({ onDirtyChange }: MemoryWorkspaceProps = {}) {
       <main style={editorPanelStyle}>
         {error ? <div role="alert" style={alertStyle}>{error}</div> : null}
         {loading ? (
-          <div role="status" style={emptyStyle}>Loading memories…</div>
+          <div role="status" style={emptyStyle}>记忆加载中…</div>
         ) : selectedId ? (
           <>
             <div style={selectionHeaderStyle}>
-              <span style={selectionLabelStyle}>Selected memory</span>
+              <span style={selectionLabelStyle}>选中的记忆</span>
               <strong style={selectionIdStyle}>{selectedId}</strong>
             </div>
             <MarkdownContentViewer

@@ -306,7 +306,7 @@ export function OntologyEditor() {
         setNodes([]);
         setEdges([]);
         setSelectedElement(null);
-        setGraphError(error instanceof Error ? error.message : "Failed to load ontology graph");
+        setGraphError(error instanceof Error ? error.message : "加载本体图失败");
       })
       .finally(() => {
         if (!controller.signal.aborted) setIsLoadingGraph(false);
@@ -345,7 +345,7 @@ export function OntologyEditor() {
 
   const addProperty = useCallback(() => {
     if (nodes.length < 2) {
-      alert("Add at least two classes before creating a property edge.");
+      alert("请先添加至少两个类，再创建属性边。");
       return;
     }
     const newId = `prop_${Date.now()}`;
@@ -400,7 +400,7 @@ export function OntologyEditor() {
 
   const saveDraft = useCallback(async () => {
     if (!ontologyUri) {
-      alert("Please select an ontology first");
+      alert("请先选择一个本体");
       return;
     }
     setIsSaving(true);
@@ -417,11 +417,11 @@ export function OntologyEditor() {
       });
       if (response.ok) {
         const data = await response.json();
-        alert(`Draft saved: ${data.draft_id}`);
+        alert(`草稿已保存：${data.draft_id}`);
       }
     } catch (error) {
       console.error("Failed to save draft:", error);
-      alert("Failed to save draft");
+      alert("草稿保存失败");
     } finally {
       setIsSaving(false);
     }
@@ -462,7 +462,7 @@ export function OntologyEditor() {
   const renameSelected = useCallback(() => {
     const target = showContext?.element ?? selectedElement;
     if (target && !("source" in target) && isEditableEntityType(target.data.entityType)) {
-      const newLabel = prompt("Enter new name:", String(target.data.label ?? ""));
+      const newLabel = prompt("请输入新名称：", String(target.data.label ?? ""));
       if (newLabel) {
         setNodes((nds) =>
           nds.map((n) => (n.id === target.id ? { ...n, data: { ...n.data, label: newLabel } } : n))
@@ -560,7 +560,7 @@ export function OntologyEditor() {
       <style>{ontologyFlowThemeCss}</style>
       <div style={toolbarStyle}>
         <select
-          aria-label="Active ontology"
+          aria-label="当前本体"
           value={ontologyUri}
           onChange={(event) => {
             setOntologyUri(event.target.value);
@@ -570,7 +570,7 @@ export function OntologyEditor() {
           }}
           style={selectStyle}
         >
-          <option value="">Select ontology...</option>
+          <option value="">选择本体…</option>
           {registry.map((entry) => (
             <option key={entry.uri} value={entry.uri}>
               {entry.name || entry.uri}
@@ -579,32 +579,32 @@ export function OntologyEditor() {
         </select>
         <button style={toolbarButtonStyle} onClick={addClass}>
           <Plus size={14} />
-          Add Class
+          添加类
         </button>
         <button style={toolbarButtonStyle} onClick={addProperty} disabled={nodes.length < 2}>
           <GitBranch size={14} />
-          Add Property
+          添加属性
         </button>
         <button style={toolbarButtonStyle} onClick={addIndividual}>
           <User size={14} />
-          Add Individual
+          添加个体
         </button>
         <button style={toolbarButtonStyle} onClick={addRestriction}>
           <Shield size={14} />
-          Add Restriction
+          添加限制
         </button>
         <button style={toolbarButtonStyle} onClick={addAxiom}>
           <FileText size={14} />
-          Add Axiom
+          添加公理
         </button>
         <button style={toolbarButtonStyle} onClick={autoLayout}>
           <Layout size={14} />
-          Auto Layout
+          自动布局
         </button>
         <div style={{ flex: 1 }} />
         <button style={toolbarButtonStyle} onClick={saveDraft} disabled={isSaving}>
           <Send size={14} />
-          {isSaving ? "Saving..." : "Propose"}
+          {isSaving ? "保存中…" : "提交提案"}
         </button>
       </div>
 
@@ -632,18 +632,18 @@ export function OntologyEditor() {
           </ReactFlow>
 
           {isLoadingGraph && (
-            <div style={canvasMessageStyle}>Loading ontology structure…</div>
+            <div style={canvasMessageStyle}>正在加载本体结构…</div>
           )}
           {!isLoadingGraph && graphError && (
             <div style={{ ...canvasMessageStyle, color: "#ff9a8d" }}>{graphError}</div>
           )}
           {!isLoadingGraph && !graphError && unownedEntity && (
             <div style={{ ...canvasMessageStyle, color: "#f2b66d" }}>
-              No registered ontology owns {unownedEntity}. Pick an ontology above to start editing.
+              没有已注册的本体包含 {unownedEntity}。请在上方选择一个本体开始编辑。
             </div>
           )}
           {!isLoadingGraph && !graphError && !unownedEntity && ontologyUri && nodes.length === 0 && (
-            <div style={canvasMessageStyle}>This ontology has no editable classes or properties.</div>
+            <div style={canvasMessageStyle}>该本体暂无可编辑的类或属性。</div>
           )}
 
           {showContext && (
@@ -653,17 +653,17 @@ export function OntologyEditor() {
                   {!("source" in showContext.element) && (
                     <div style={contextItemStyle} onClick={renameSelected}>
                       <Pencil size={14} />
-                      Rename
+                      重命名
                     </div>
                   )}
                   <div style={contextItemStyle} onClick={deleteSelected}>
                     <Trash2 size={14} />
-                    Delete
+                    删除
                   </div>
                 </>
               ) : (
                 <div style={{ ...contextItemStyle, cursor: "default", color: "#8fa8c6" }}>
-                  This term is read-only
+                  该术语为只读
                 </div>
               )}
             </div>
@@ -674,14 +674,14 @@ export function OntologyEditor() {
           <div style={detailPanelStyle}>
             <h3 style={{ margin: "0 0 16px", color: "#ebf3ff", fontSize: "16px" }}>
               {"source" in selectedElement
-                ? "Relationship Details"
+                ? "关系详情"
                 : selectedElement.data.entityType === "property"
-                  ? "Property Details"
+                  ? "属性详情"
                   : selectedElement.data.entityType === "ontology"
-                    ? "Ontology Details"
+                    ? "本体详情"
                     : selectedElement.data.entityType === "external"
-                      ? "External Term Details"
-                      : "Class Details"}
+                      ? "外部术语详情"
+                      : "类详情"}
             </h3>
             <div style={{ marginBottom: "12px" }}>
               <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
@@ -695,7 +695,7 @@ export function OntologyEditor() {
               <>
                 <div style={{ marginBottom: "12px" }}>
                   <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
-                    Label
+                    标签
                   </label>
                   <input
                     type="text"
@@ -740,7 +740,7 @@ export function OntologyEditor() {
                 </div>
                 <div style={{ marginBottom: "12px" }}>
                   <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
-                    Type
+                    类型
                   </label>
                   <div style={{ color: "#ebf3ff", fontSize: "13px" }}>
                     {selectedElement.data.type || "owl:Class"}

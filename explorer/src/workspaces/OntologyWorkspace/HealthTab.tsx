@@ -25,7 +25,7 @@ export function HealthTab({ onFixInEditor }: HealthTabProps) {
       })
       .catch((err) => {
         if (cancelled) return;
-        setError(err instanceof Error ? err.message : "Failed to load ontology registry.");
+        setError(err instanceof Error ? err.message : "加载本体注册表失败。");
       });
     return () => {
       cancelled = true;
@@ -75,15 +75,14 @@ export function HealthTab({ onFixInEditor }: HealthTabProps) {
     <div style={pageStyle}>
       <section style={heroStyle}>
         <div>
-          <div style={kickerStyle}><HeartPulse size={14} /> Ontology Health</div>
-          <h2 style={titleStyle}>Quality and governance signals</h2>
+          <div style={kickerStyle}><HeartPulse size={14} /> 本体健康状态</div>
+          <h2 style={titleStyle}>质量与治理信号</h2>
           <p style={textStyle}>
-            Score completeness, consistency, SHACL readiness, alignment coverage,
-            and documentation quality for the selected ontology.
+            为所选本体评估完整性、一致性、SHACL 就绪度、对齐覆盖度与文档质量。
           </p>
         </div>
         <div style={selectorShellStyle}>
-          <label style={labelStyle}>Ontology</label>
+          <label style={labelStyle}>本体</label>
           <select style={inputStyle} value={selectedUri} onChange={(event) => setSelectedUri(event.target.value)}>
             {registry.map((entry) => <option key={entry.uri} value={entry.uri}>{entry.name}</option>)}
           </select>
@@ -93,14 +92,14 @@ export function HealthTab({ onFixInEditor }: HealthTabProps) {
       {error ? <div style={errorStyle}>{error}</div> : null}
 
       {loading ? (
-        <div style={loadingStyle}><Loader2 size={18} className="ws-spin" /> Computing health dashboard...</div>
+        <div style={loadingStyle}><Loader2 size={18} className="ws-spin" /> 正在计算健康面板…</div>
       ) : health ? (
         <>
           <section style={{ ...scoreGridStyle, gridTemplateColumns: `220px repeat(${health.dimensions.length}, minmax(180px, 1fr))` }}>
             <div style={scoreCardStyle}>
               <span style={scoreValueStyle}>{Math.round(health.total_score)}</span>
-              <span style={mutedStyle}>Total health score</span>
-              <button style={secondaryButtonStyle} onClick={exportReport}><Download size={14} /> Export report</button>
+              <span style={mutedStyle}>总体健康评分</span>
+              <button style={secondaryButtonStyle} onClick={exportReport}><Download size={14} /> 导出报告</button>
             </div>
             {health.dimensions.map((dimension) => (
               <div key={dimension.key} style={dimensionCardStyle}>
@@ -120,17 +119,17 @@ export function HealthTab({ onFixInEditor }: HealthTabProps) {
           </section>
 
           <section style={cardStyle}>
-            <h3 style={sectionTitleStyle}>Actionable issues</h3>
+            <h3 style={sectionTitleStyle}>可处理的问题</h3>
             <div style={issueListStyle}>
               {health.issues.map((issue) => (
                 <IssueRow key={issue.id} issue={issue} onFixInEditor={onFixInEditor} />
               ))}
-              {!health.issues.length ? <p style={mutedStyle}>No actionable issues reported for this ontology.</p> : null}
+              {!health.issues.length ? <p style={mutedStyle}>该本体暂无可处理的问题。</p> : null}
             </div>
           </section>
         </>
       ) : (
-        <div style={emptyStyle}>Select an ontology to compute health signals.</div>
+        <div style={emptyStyle}>请选择一个本体以计算健康信号。</div>
       )}
     </div>
   );
@@ -149,7 +148,7 @@ function IssueRow({ issue, onFixInEditor }: { issue: HealthIssue; onFixInEditor?
       {issue.entity_uri ? (
         <button style={smallButtonStyle} onClick={() => onFixInEditor?.(issue.entity_uri || "")}>
           <Wrench size={13} />
-          Fix in Editor
+          在编辑器中修复
         </button>
       ) : (
         <div />

@@ -285,7 +285,7 @@ function SegmentedModeControl({ items }: { items: GraphToolbarItem[] }) {
   }
 
   return (
-    <div className="explore-mode-control" role="group" aria-label="Graph view mode">
+    <div className="explore-mode-control" role="group" aria-label="图谱视图模式">
       {items.map((item) => (
         <ToolbarButton key={item.id} item={item} className="explore-mode-segment" toggle />
       ))}
@@ -424,18 +424,18 @@ function SearchCommandBar({
             closeSuggestions();
           }
         }}
-        placeholder="Search command, node, or concept"
-        aria-label="Search graph nodes"
+        placeholder="搜索命令、节点或概念"
+        aria-label="搜索图谱节点"
         aria-autocomplete="list"
         aria-controls={listboxId}
         aria-activedescendant={highlightedIndex >= 0 ? `${listboxId}-${highlightedIndex}` : undefined}
       />
-      <button type="submit" disabled={disabled} aria-label="Search for the current query">
-        Search
+      <button type="submit" disabled={disabled} aria-label="按当前查询搜索">
+        搜索
       </button>
 
       {suggestionsOpen && suggestions.length > 0 ? (
-        <ul id={listboxId} role="listbox" className="explore-search-suggestions" aria-label="Search suggestions">
+        <ul id={listboxId} role="listbox" className="explore-search-suggestions" aria-label="搜索建议">
           {suggestions.map((result, index) => (
             <li
               key={result.node.id}
@@ -462,13 +462,13 @@ function SearchCommandBar({
 function SemanticColorLegend({ items }: { items: GraphColorLegendItem[] }) {
   if (!items.length) return null;
   return (
-    <div className="explore-color-legend" role="group" aria-label="Node colors">
-      <span className="explore-color-legend-label" title="Base semantic colors; selection, zoom, and distance effects can change node appearance.">
-        Node colors
+    <div className="explore-color-legend" role="group" aria-label="节点颜色">
+      <span className="explore-color-legend-label" title="基础语义配色；选中、缩放和距离效果可能会改变节点外观。">
+        节点颜色
       </span>
       <ul className="explore-color-legend-items">
         {items.map((item) => (
-          <li key={item.id} className="explore-color-legend-item" title={`${item.group}: ${item.count.toLocaleString()} nodes`}>
+          <li key={item.id} className="explore-color-legend-item" title={`${item.group}：${item.count.toLocaleString()} 个节点`}>
             <span className="explore-color-legend-mark" style={{ backgroundColor: item.color }} aria-hidden="true" />
             <span className="explore-color-legend-name">{item.group}</span>
           </li>
@@ -1380,7 +1380,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
       nodesTotal: graphSummary.nodeCount,
       edgesLoaded: graphSummary.edgeCount,
       edgesTotal: graphSummary.edgeCount,
-      message: "Settling runtime layout",
+      message: "正在稳定运行时布局",
       showGraphBehind: true,
       layoutSource: graphSummary.layoutSource,
       layoutState: "bootstrapping",
@@ -1401,7 +1401,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
   });
 
   const graphLoadErrorMessage = isGraphLoadError
-    ? (graphLoadError instanceof Error ? graphLoadError.message : "Unknown error while loading the graph.")
+    ? (graphLoadError instanceof Error ? graphLoadError.message : "加载图谱时发生未知错误。")
     : null;
 
   const handleRetryGraphLoad = useCallback(() => {
@@ -1641,7 +1641,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
   const confirmDiscardMarkdownDraft = useCallback(() => {
     if (!markdownDraftDirty) return true;
     const discard = window.confirm(
-      "Discard the unapplied Markdown draft and leave this node?",
+      "放弃未应用的 Markdown 草稿并离开该节点？",
     );
     return discard;
   }, [markdownDraftDirty]);
@@ -1799,12 +1799,12 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
         body: JSON.stringify({ query: searchQuery, limit: 8 }),
       });
       if (!response.ok) {
-        throw new Error(`Search failed with status ${response.status}`);
+        throw new Error(`搜索失败，状态码 ${response.status}`);
       }
       const data = await response.json();
       setSearchResults(data.results || []);
     } catch (searchFetchError) {
-      setSearchError(searchFetchError instanceof Error ? searchFetchError.message : "Search failed");
+      setSearchError(searchFetchError instanceof Error ? searchFetchError.message : "搜索失败");
     }
   }, [searchQuery]);
 
@@ -2061,7 +2061,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
         scores: EMPTY_DISTANCE_RECORD,
         count: 0,
         status: distanceMode === "semantic" ? "unavailable" : "idle",
-        error: distanceMode === "semantic" ? "Select a Full Graph node to load semantic distance." : null,
+        error: distanceMode === "semantic" ? "请在完整图谱模式下选择节点以加载语义距离。" : null,
       });
       return;
     }
@@ -2089,10 +2089,10 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
         }
         if (!response.ok) {
           throw new Error(response.status === 503
-            ? "Semantic similarity is unavailable for this graph."
+            ? "该图谱暂不支持语义相似度。"
             : response.status === 404
-              ? "Selected node was not found by the semantic distance API."
-            : `Semantic distance failed with status ${response.status}`);
+              ? "语义距离 API 未找到所选节点。"
+            : `语义距离请求失败，状态码 ${response.status}`);
         }
 
         const data: SemanticNeighborhoodResponse = await response.json();
@@ -2108,7 +2108,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
           scores,
           count: Object.keys(scores).length,
           status: Object.keys(scores).length > 0 ? "ready" : "unavailable",
-          error: Object.keys(scores).length > 0 ? null : "No semantic neighbors were returned for this node.",
+          error: Object.keys(scores).length > 0 ? null : "该节点未返回任何语义邻居。",
         });
       } catch (error) {
         if (cancelled) {
@@ -2119,7 +2119,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
           scores: EMPTY_DISTANCE_RECORD,
           count: 0,
           status: "error",
-          error: error instanceof Error ? error.message : "Semantic distance could not be loaded.",
+          error: error instanceof Error ? error.message : "无法加载语义距离。",
         });
       }
     };
@@ -2167,7 +2167,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
         heatmapSaturationMode: undefined,
         semanticNeighborCount: 0,
         status: "unavailable",
-        error: "Distance intelligence is available in Full Graph mode.",
+        error: "距离智能仅在完整图谱模式下可用。",
       };
     }
 
@@ -2187,7 +2187,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
         heatmapSaturationMode: undefined,
         semanticNeighborCount: 0,
         status: "unavailable",
-        error: "Select a node to activate distance intelligence.",
+        error: "请选择节点以启用距离智能。",
       };
     }
 
@@ -2376,7 +2376,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
     if (!selectedNodeId || !graph.hasNode(selectedNodeId)) {
       if (viewMode === "grouped") {
         return displayState.groupedViewAvailable
-          ? "Communities compressed into grouped structure view"
+          ? "社区已压缩为分组结构视图"
           : (groupedViewReasonText(displayState.groupedViewReason) ?? groupedViewReasonText({ code: "communities-undetected" }));
       }
       return null;
@@ -2385,18 +2385,18 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
     const localNeighborCount = graph.neighbors(selectedNodeId).length;
     if (viewMode === "focused") {
       const visibleNeighbors = displayState.selectedVisibleNeighborIds.length || Math.min(localNeighborCount, 16);
-      return `${visibleNeighbors + 1} nodes in focused view`;
+      return `聚焦视图：${visibleNeighbors + 1} 个节点`;
     }
 
     if (viewMode === "grouped") {
-      return "Grouped structure view with direct community drill-in";
+      return "分组结构视图，可直接下钻社区";
     }
 
     if (displayState.selectedCollapsedNeighborIds.length > 0) {
-      return `${displayState.selectedVisibleNeighborIds.length} visible neighbors, ${displayState.selectedCollapsedNeighborIds.length} collapsed`;
+      return `${displayState.selectedVisibleNeighborIds.length} 个可见邻居，${displayState.selectedCollapsedNeighborIds.length} 个已折叠`;
     }
 
-    return `${localNeighborCount} direct neighbors highlighted`;
+    return `${localNeighborCount} 个直接邻居已高亮`;
   }, [displayState, selectedNodeId, viewMode]);
   const graphSummary = summary as GraphLoadSummary | null;
   const selectedNodeState = useMemo(
@@ -2422,8 +2422,8 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
       {
         id: "exploration-effects",
         panelId: "effects-panel",
-        label: "Effects",
-        title: "Open exploration effects controls",
+        label: "效果",
+        title: "打开探索效果控制",
         order: 18,
         load: loadExplorationEffectsPlugin,
         shouldLoad: explorationEffectsShouldLoad,
@@ -2431,8 +2431,8 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
       {
         id: "neighborhood-panel",
         panelId: "neighborhood-panel",
-        label: "Neighbors",
-        title: "Toggle neighborhood panel",
+        label: "邻域",
+        title: "切换邻域面板",
         order: 30,
         load: loadNeighborhoodPanelPlugin,
         shouldLoad: neighborhoodPanelShouldLoad,
@@ -2440,8 +2440,8 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
       {
         id: "temporal-overlay",
         panelId: "temporal-panel",
-        label: "Temporal",
-        title: "Toggle temporal context panel",
+        label: "时间",
+        title: "切换时间上下文面板",
         order: 40,
         load: loadTemporalOverlayPlugin,
         shouldLoad: temporalOverlayShouldLoad,
@@ -2756,7 +2756,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
         title: entry.label,
         placement: "bottom" as const,
         order: entry.order,
-        content: <div style={pluginLoadingStyle}>Loading {entry.label.toLowerCase()}…</div>,
+        content: <div style={pluginLoadingStyle}>正在加载{entry.label.toLowerCase()}…</div>,
       })),
     [loadedPlugins, pluginPanelState, pluginRegistry],
   );
@@ -2793,17 +2793,17 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
     return [
       {
         id: "view-full",
-        label: "Full Graph",
-        title: "Return to the full graph context",
+        label: "完整图谱",
+        title: "返回完整图谱上下文",
         icon: Layers3,
         active: viewMode === "full",
         onClick: () => setLayoutViewMode("full"),
       },
       {
         id: "view-grouped",
-        label: "Grouped View",
+        label: "分组视图",
         title: displayState.groupedViewAvailable
-          ? "Compress dense structure into detected communities"
+          ? "将稠密结构压缩为检测到的社区"
           : (groupedViewReasonText(displayState.groupedViewReason)
             ?? groupedViewReasonText({ code: "communities-undetected" })
             ?? undefined),
@@ -2814,9 +2814,9 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
       },
       {
         id: "view-focused",
-        label: "Focus",
+        label: "聚焦",
         title: canActivateFocusedMode
-          ? "Inspect the selected node in a focused local graph"
+          ? "在聚焦局部图谱中检查所选节点"
           : (focusedUnavailableReasonText(focusedSelectionResolution.reason) ?? undefined),
         icon: Focus,
         active: viewMode === "focused",
@@ -2844,27 +2844,27 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
   const cameraToolbarItems = useMemo<GraphToolbarItem[]>(() => [
     {
       id: "zoom-in",
-      label: "Zoom In",
-      title: "Zoom in (or scroll up on the canvas)",
-      ariaLabel: "Zoom in",
+      label: "放大",
+      title: "放大（或在画布上向上滚动）",
+      ariaLabel: "放大",
       icon: ZoomIn,
       compact: true,
       onClick: () => sceneRef.current?.zoomIn(),
     },
     {
       id: "zoom-out",
-      label: "Zoom Out",
-      title: "Zoom out (or scroll down on the canvas)",
-      ariaLabel: "Zoom out",
+      label: "缩小",
+      title: "缩小（或在画布上向下滚动）",
+      ariaLabel: "缩小",
       icon: ZoomOut,
       compact: true,
       onClick: () => sceneRef.current?.zoomOut(),
     },
     {
       id: "fit-view",
-      label: "Fit",
-      title: "Reset the camera to fit the whole graph",
-      ariaLabel: "Fit view",
+      label: "适配",
+      title: "重置相机以适配整个图谱",
+      ariaLabel: "适配视图",
       icon: Maximize2,
       compact: true,
       onClick: () => sceneRef.current?.fitView(),
@@ -2874,8 +2874,8 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
   const layoutToolbarItems = useMemo<GraphToolbarItem[]>(() => [
     {
       id: "layout-toggle",
-      label: isLayoutRunning ? "Pause" : "Run",
-      title: "Toggle the layout worker",
+      label: isLayoutRunning ? "暂停" : "运行",
+      title: "切换布局 worker",
       icon: isLayoutRunning ? Pause : Play,
       active: isLayoutRunning,
       disabled: showLoadingOverlay,
@@ -2891,16 +2891,16 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
     return [
       {
         id: "collapse-neighborhood",
-        label: "Collapse",
-        title: "Hide lower-priority fanout around the selected node",
+        label: "折叠",
+        title: "隐藏所选节点周围低优先级的扇出节点",
         icon: Eye,
         disabled: !selectedNodeState.canCollapseNeighborhood || selectedNodeState.isNeighborhoodCollapsed,
         onClick: () => handlePluginAction({ type: "collapseNeighborhood" }),
       },
       {
         id: "expand-neighborhood",
-        label: "Expand",
-        title: "Restore the collapsed local neighborhood",
+        label: "展开",
+        title: "恢复已折叠的局部邻域",
         icon: Users,
         disabled: !selectedNodeState.isNeighborhoodCollapsed,
         onClick: () => handlePluginAction({ type: "expandNeighborhood" }),
@@ -2923,9 +2923,9 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
   const utilityToolbarItems = useMemo<GraphToolbarItem[]>(() => [
     {
       id: "reload",
-      label: "Reload",
-      title: "Reload the graph data",
-      ariaLabel: "Reload graph data",
+      label: "重新加载",
+      title: "重新加载图谱数据",
+      ariaLabel: "重新加载图谱数据",
       icon: RefreshCw,
       compact: true,
       disabled: showLoadingOverlay,
@@ -2943,10 +2943,10 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
     return [
       {
         id: "ego-mode",
-        label: egoModeEnabled ? `Ego (${egoMaxHops}h)` : "Ego Mode",
+        label: egoModeEnabled ? `自我中心（${egoMaxHops} 跳）` : "自我中心模式",
         title: egoModeEnabled
-          ? `Egocentric view: ${egoMaxHops} hops depth (click to toggle off)`
-          : "Show depth-of-field fading around the selected node",
+          ? `自我中心视图：${egoMaxHops} 跳深度（点击关闭）`
+          : "在所选节点周围显示景深渐隐效果",
         active: egoModeEnabled,
         onClick: () => {
           setEgoModeEnabled((v) => !v);
@@ -2956,10 +2956,10 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
       },
       {
         id: "heatmap",
-        label: "Heatmap",
+        label: "热力图",
         title: heatmapEnabled
-          ? "Distance heatmap active (click to toggle off)"
-          : "Color nodes by hop distance from selected node",
+          ? "距离热力图已启用（点击关闭）"
+          : "按与所选节点的跳数距离为节点着色",
         active: heatmapEnabled,
         onClick: () => {
           setHeatmapEnabled((v) => !v);
@@ -2969,8 +2969,8 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
       },
       {
         id: "dist-structural",
-        label: "Structural",
-        title: "Color edges by structural (hop) distance",
+        label: "结构",
+        title: "按结构（跳数）距离为边着色",
         active: distanceMode === "structural",
         onClick: () => {
           setEgoModeEnabled(false);
@@ -2980,8 +2980,8 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
       },
       {
         id: "dist-semantic",
-        label: "Semantic",
-        title: "Color edges by semantic similarity to selected node",
+        label: "语义",
+        title: "按与所选节点的语义相似度为边着色",
         active: distanceMode === "semantic",
         onClick: () => {
           setEgoModeEnabled(false);
@@ -2995,32 +2995,32 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
   const toolbarClusters = useMemo<GraphToolbarGroup[]>(() => [
     {
       id: "camera",
-      label: "Camera",
+      label: "相机",
       items: cameraToolbarItems,
     },
     {
       id: "layout",
-      label: "Layout",
+      label: "布局",
       items: layoutToolbarItems,
     },
     {
       id: "local-structure",
-      label: "Local",
+      label: "局部",
       items: localToolbarItems,
     },
     {
       id: "distance",
-      label: "Distance",
+      label: "距离",
       items: distanceToolbarItems,
     },
     {
       id: "analysis",
-      label: "Analysis",
+      label: "分析",
       items: analysisToolbarItems,
     },
     {
       id: "utility",
-      label: "Utility",
+      label: "工具",
       items: utilityToolbarItems,
     },
   ].filter((group) => group.items.length > 0), [
@@ -3066,39 +3066,39 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
     if (rendered == null || rendered >= truth) {
       return truth.toLocaleString();
     }
-    return `${truth.toLocaleString()} (${rendered.toLocaleString()} shown)`;
+    return `${truth.toLocaleString()}（显示 ${rendered.toLocaleString()}）`;
   };
   const heatmapDistanceSummary = visibleDistanceCounts
     ? [
-      `${visibleDistanceCounts.anchor.toLocaleString()} anchor`,
-      `${formatRenderedCount(visibleDistanceCounts.oneHop, renderedHeatmapCounts?.oneHop)} 1-hop`,
-      `${formatRenderedCount(visibleDistanceCounts.twoHop, renderedHeatmapCounts?.twoHop)} 2-hop`,
-      `${formatRenderedCount(visibleDistanceCounts.threeHopPlus, renderedHeatmapCounts?.threeHopPlus)} 3+ hop`,
-      `${visibleDistanceCounts.outside.toLocaleString()} outside`,
-      distanceVisualState.heatmapSaturationMode === "sampled" ? "Sampled for readability" : "",
+      `${visibleDistanceCounts.anchor.toLocaleString()} 个锚点`,
+      `${formatRenderedCount(visibleDistanceCounts.oneHop, renderedHeatmapCounts?.oneHop)} 个 1 跳`,
+      `${formatRenderedCount(visibleDistanceCounts.twoHop, renderedHeatmapCounts?.twoHop)} 个 2 跳`,
+      `${formatRenderedCount(visibleDistanceCounts.threeHopPlus, renderedHeatmapCounts?.threeHopPlus)} 个 3+ 跳`,
+      `${visibleDistanceCounts.outside.toLocaleString()} 个范围外节点`,
+      distanceVisualState.heatmapSaturationMode === "sampled" ? "已采样以保证可读性" : "",
     ].filter(Boolean).join(" · ")
-    : `${distanceReachableCount.toLocaleString()} nodes within ${distanceVisualState.maxHops} hops`;
+    : `${distanceReachableCount.toLocaleString()} 个节点在 ${distanceVisualState.maxHops} 跳以内`;
   const heatmapRenderedSummary = distanceVisualState.mode === "heatmap" && renderedHeatmapCounts
     ? [
-      `${renderedHeatmapCounts.anchor.toLocaleString()} anchor shown`,
-      `${renderedHeatmapCounts.oneHop.toLocaleString()} 1-hop shown`,
-      `${renderedHeatmapCounts.twoHop.toLocaleString()} 2-hop shown`,
-      `${renderedHeatmapCounts.threeHopPlus.toLocaleString()} 3+ hop shown`,
+      `${renderedHeatmapCounts.anchor.toLocaleString()} 个锚点已显示`,
+      `${renderedHeatmapCounts.oneHop.toLocaleString()} 个 1 跳已显示`,
+      `${renderedHeatmapCounts.twoHop.toLocaleString()} 个 2 跳已显示`,
+      `${renderedHeatmapCounts.threeHopPlus.toLocaleString()} 个 3+ 跳已显示`,
     ].join(" · ")
     : null;
   const distanceLegendItems = distanceVisualState.mode === "heatmap"
     ? [
-      { label: "Anchor", color: getDistanceBandColor(0) },
+      { label: "锚点", color: getDistanceBandColor(0) },
       { label: "1", color: getDistanceBandColor(1) },
       { label: "2", color: getDistanceBandColor(2) },
       { label: "3", color: getDistanceBandColor(3) },
-      { label: "Outside", color: withAlpha(GRAPH_THEME.palette.overview.nodeMuted, 0.38) },
+      { label: "范围外", color: withAlpha(GRAPH_THEME.palette.overview.nodeMuted, 0.38) },
     ]
     : [
-      { label: "0h", color: getDistanceBandColor(0) },
-      { label: "1h", color: getDistanceBandColor(1) },
-      { label: "2-3h", color: getDistanceBandColor(3) },
-      { label: "4-6h", color: getDistanceBandColor(6) },
+      { label: "0 跳", color: getDistanceBandColor(0) },
+      { label: "1 跳", color: getDistanceBandColor(1) },
+      { label: "2-3 跳", color: getDistanceBandColor(3) },
+      { label: "4-6 跳", color: getDistanceBandColor(6) },
     ];
 
   return (
@@ -3117,10 +3117,10 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
                     <MetricChip>{getGraphLoadTitle(loadingProgress.phase)}</MetricChip>
                   ) : null}
                   {summary ? (
-                    <MetricChip>{summary.nodeCount.toLocaleString()} nodes · {summary.edgeCount.toLocaleString()} edges</MetricChip>
+                    <MetricChip>{summary.nodeCount.toLocaleString()} 个节点 · {summary.edgeCount.toLocaleString()} 条边</MetricChip>
                   ) : null}
                   {activeNodeCount !== null ? (
-                    <MetricChip tone="success">{activeNodeCount.toLocaleString()} active</MetricChip>
+                    <MetricChip tone="success">{activeNodeCount.toLocaleString()} 个活跃节点</MetricChip>
                   ) : null}
                   {focusedSummary ? <MetricChip tone="warm">{focusedSummary}</MetricChip> : null}
                 </div>
@@ -3152,7 +3152,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
 
               {egoModeEnabled && (
                 <div style={{ display: "flex", alignItems: "center", gap: 10, fontSize: 12, color: "#a0b4cc" }}>
-                  <span style={{ fontWeight: 600, color: "#79c0ff" }}>Ego depth:</span>
+                  <span style={{ fontWeight: 600, color: "#79c0ff" }}>自我中心深度：</span>
                   <input
                     type="range"
                     min={1}
@@ -3160,9 +3160,9 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
                     value={egoMaxHops}
                     onChange={(e) => setEgoMaxHops(Number(e.target.value))}
                     style={{ width: 90, accentColor: "#79c0ff" }}
-                    title={`Ego depth: ${egoMaxHops} hops`}
+                    title={`自我中心深度：${egoMaxHops} 跳`}
                   />
-                  <span style={{ fontFamily: "monospace", color: "#e6f2ff" }}>{egoMaxHops} hop{egoMaxHops !== 1 ? "s" : ""}</span>
+                  <span style={{ fontFamily: "monospace", color: "#e6f2ff" }}>{egoMaxHops} 跳</span>
                 </div>
               )}
 
@@ -3170,23 +3170,23 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
                 <div style={distanceStatusStripStyle}>
                   <div style={distanceStatusTitleStyle}>
                     <Activity size={14} aria-hidden />
-                    <span>Distance Intelligence</span>
+                    <span>距离智能</span>
                     <span style={distanceModeBadgeStyle}>{distanceVisualState.mode}</span>
                   </div>
                   <div style={distanceStatusMetaStyle}>
                     {distanceVisualState.anchorLabel ? (
-                      <span>Anchor: <strong>{distanceVisualState.anchorLabel}</strong></span>
+                      <span>锚点：<strong>{distanceVisualState.anchorLabel}</strong></span>
                     ) : null}
                     {distanceVisualState.mode === "semantic" ? (
                       <span>
                         {distanceVisualState.status === "loading"
-                          ? "Loading semantic neighborhood..."
-                          : `${distanceVisualState.semanticNeighborCount ?? 0} semantic neighbors`}
+                          ? "正在加载语义邻域…"
+                          : `${distanceVisualState.semanticNeighborCount ?? 0} 个语义邻居`}
                       </span>
                     ) : distanceVisualState.mode === "heatmap" ? (
                       <span>{heatmapDistanceSummary}</span>
                     ) : (
-                      <span>{distanceReachableCount.toLocaleString()} nodes within {distanceVisualState.maxHops} hops</span>
+                      <span>{distanceReachableCount.toLocaleString()} 个节点在 {distanceVisualState.maxHops} 跳以内</span>
                     )}
                     {distanceVisualState.status === "unavailable" || distanceVisualState.status === "error" ? (
                       <span style={{ color: GRAPH_THEME.ui.control.dangerText }}>{distanceVisualState.error}</span>
@@ -3212,16 +3212,16 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
                     <span style={{ color: "#8b949e", fontSize: 12 }}>
-                      {searchResults.length} result{searchResults.length === 1 ? "" : "s"}
+                      {searchResults.length} 条结果
                     </span>
                     <button
                       type="button"
                       onClick={handleClearSearchResults}
                       style={{ ...secondaryActionButtonStyle, minHeight: 26, padding: "4px 9px", gap: 5 }}
-                      aria-label="Dismiss search results"
+                      aria-label="关闭搜索结果"
                     >
                       <X size={12} strokeWidth={2.4} />
-                      Dismiss
+                      关闭
                     </button>
                   </div>
                   <div className="explore-search-results hud-scrollbar" style={searchResultsStripStyle}>
@@ -3247,7 +3247,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
                   <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "flex-start" }}>
                     <div style={{ minWidth: 0 }}>
                       <div style={{ color: "rgba(127, 208, 255, 0.76)", fontSize: 11, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                        Relationship
+                        关系
                       </div>
                       <div style={{ color: "#f4f8ff", fontSize: 15, fontWeight: 700, marginTop: 6 }}>
                         {selectedEdgeState.edgeType}
@@ -3257,7 +3257,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
                       onClick={() => setSelectedEdgeId("")}
                       style={{ ...secondaryActionButtonStyle, minHeight: 30, padding: "6px 10px" }}
                     >
-                      Close
+                      关闭
                     </button>
                   </div>
 
@@ -3272,23 +3272,23 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
                   </div>
 
                   <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-                    <MetricChip tone="warm">weight {selectedEdgeState.weight.toFixed(2)}</MetricChip>
+                    <MetricChip tone="warm">权重 {selectedEdgeState.weight.toFixed(2)}</MetricChip>
                     {selectedEdgeState.isAggregated ? (
                       <MetricChip tone="success">
-                        {selectedEdgeState.aggregateCount} bundled edge{selectedEdgeState.aggregateCount === 1 ? "" : "s"}
+                        {selectedEdgeState.aggregateCount} 条捆绑边
                       </MetricChip>
                     ) : (
-                      <MetricChip>{selectedEdgeState.siblingCount} parallel lane{selectedEdgeState.siblingCount === 1 ? "" : "s"}</MetricChip>
+                      <MetricChip>{selectedEdgeState.siblingCount} 条并行通道</MetricChip>
                     )}
-                    <MetricChip>{selectedEdgeState.familySize} family member{selectedEdgeState.familySize === 1 ? "" : "s"}</MetricChip>
+                    <MetricChip>{selectedEdgeState.familySize} 个同族成员</MetricChip>
                     {selectedEdgeState.bundleKind ? (
-                      <MetricChip>{selectedEdgeState.bundleKind} bundle</MetricChip>
+                      <MetricChip>{selectedEdgeState.bundleKind} 捆绑</MetricChip>
                     ) : null}
                     {selectedEdgeState.dominantEdgeType ? (
                       <MetricChip>{selectedEdgeState.dominantEdgeType}</MetricChip>
                     ) : null}
                     {selectedEdgeState.provenanceCount > 0 ? (
-                      <MetricChip>{selectedEdgeState.provenanceCount} provenance fields</MetricChip>
+                      <MetricChip>{selectedEdgeState.provenanceCount} 个溯源字段</MetricChip>
                     ) : null}
                   </div>
 
@@ -3373,7 +3373,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
               ) : null}
 
               <div className="explore-scene-footer">
-                <Suspense fallback={<div style={timelineFallbackStyle}>Loading timeline…</div>}>
+                <Suspense fallback={<div style={timelineFallbackStyle}>正在加载时间线…</div>}>
                   <LazyTimelinePanel
                     onTimeChange={onTimeChange}
                     minDate={temporalBounds?.min ?? undefined}
@@ -3388,7 +3388,7 @@ export function GraphWorkspace({ externalFocusNodeId, externalFocusToken, onDirt
             <div className="explore-inspector-shell">
               <InspectorPanel open={layoutState.showInspector} className="explore-inspector-card">
                 <div className="explore-inspector-scroll hud-scrollbar">
-                  <Suspense fallback={<div style={inspectorFallbackStyle}>Loading inspector…</div>}>
+                  <Suspense fallback={<div style={inspectorFallbackStyle}>正在加载检查器…</div>}>
                     <LazyGraphInspectorPanel
                       nodeId={selectedNodeId}
                       inspectableNodeId={inspectableNodeId || null}

@@ -565,197 +565,197 @@ function buildEffectAvailability(
   const regionsTierReady = zoomTierAtLeast(interactionState.zoomTier, GRAPH_THEME.effects.semanticRegions.minZoomTier);
   const contoursTierReady = zoomTierAtLeast(interactionState.zoomTier, GRAPH_THEME.effects.contours.minZoomTier);
   const hasPrimaryNode = Boolean(interactionState.hoveredNodeId || interactionState.selectedNodeId);
-  const layoutReason = "Layout is still settling";
+  const layoutReason = "布局仍在稳定中";
 
   const pathPulse = !effectsState.pathPulseEnabled
-    ? { enabled: false, available: false, reason: "Disabled by toggle" }
+    ? { enabled: false, available: false, reason: "已被开关禁用" }
     : isLayoutRunning
       ? { enabled: true, available: false, reason: layoutReason }
     : !hasActivePath
-      ? { enabled: true, available: false, reason: "No active path" }
+      ? { enabled: true, available: false, reason: "无活动路径" }
       : !pulseTierReady
         ? {
             enabled: true,
             available: false,
-            reason: "Disabled by zoom tier",
-            detail: `Requires ${GRAPH_THEME.effects.pathPulse.minZoomTier}`,
+            reason: "因缩放层级禁用",
+            detail: `需要 ${GRAPH_THEME.effects.pathPulse.minZoomTier}`,
           }
         : visiblePathSegments === 0
-          ? { enabled: true, available: false, reason: "Path is off-screen" }
+          ? { enabled: true, available: false, reason: "路径在屏幕外" }
           : visiblePathSegments > GRAPH_THEME.effects.pathPulse.maxSegments
             ? {
                 enabled: true,
                 available: false,
-                reason: "Disabled by path size cap",
-                detail: `${visiblePathSegments} visible segments`,
+                reason: "因路径规模上限禁用",
+                detail: `${visiblePathSegments} 个可见段`,
                 visibleSegments: visiblePathSegments,
                 segmentCap: GRAPH_THEME.effects.pathPulse.maxSegments,
               }
             : {
                 enabled: true,
                 available: true,
-                reason: "Ready",
+                reason: "就绪",
                 visibleSegments: visiblePathSegments,
                 segmentCap: GRAPH_THEME.effects.pathPulse.maxSegments,
               };
 
   const pathFlow = !effectsState.pathFlowEnabled
-    ? { enabled: false, available: false, reason: "Disabled by toggle" }
+    ? { enabled: false, available: false, reason: "已被开关禁用" }
     : isLayoutRunning
       ? { enabled: true, available: false, reason: layoutReason }
     : !hasActivePath
-      ? { enabled: true, available: false, reason: "No active path" }
+      ? { enabled: true, available: false, reason: "无活动路径" }
       : !flowTierReady
         ? {
             enabled: true,
             available: false,
-            reason: "Disabled by zoom tier",
-            detail: `Requires ${GRAPH_THEME.effects.pathFlow.minZoomTier}`,
+            reason: "因缩放层级禁用",
+            detail: `需要 ${GRAPH_THEME.effects.pathFlow.minZoomTier}`,
           }
         : visiblePathSegments === 0
-          ? { enabled: true, available: false, reason: "Path is off-screen" }
+          ? { enabled: true, available: false, reason: "路径在屏幕外" }
           : visiblePathSegments > GRAPH_THEME.effects.pathFlow.maxSegments
             ? {
                 enabled: true,
                 available: false,
-                reason: "Disabled by path size cap",
-                detail: `${visiblePathSegments} visible segments`,
+                reason: "因路径规模上限禁用",
+                detail: `${visiblePathSegments} 个可见段`,
                 visibleSegments: visiblePathSegments,
                 segmentCap: GRAPH_THEME.effects.pathFlow.maxSegments,
               }
             : {
                 enabled: true,
                 available: true,
-                reason: "Ready",
+                reason: "就绪",
                 visibleSegments: visiblePathSegments,
                 segmentCap: GRAPH_THEME.effects.pathFlow.maxSegments,
               };
 
   const lens = !effectsState.lensEnabled
-    ? { enabled: false, available: false, reason: "Disabled by toggle" }
+    ? { enabled: false, available: false, reason: "已被开关禁用" }
     : isLayoutRunning
       ? { enabled: true, available: false, reason: layoutReason }
     : !hasPrimaryNode
-      ? { enabled: true, available: false, reason: "No focal node" }
+      ? { enabled: true, available: false, reason: "无焦点节点" }
       : !lensTierReady
         ? {
             enabled: true,
             available: false,
-            reason: "Disabled by zoom tier",
-            detail: `Requires ${GRAPH_THEME.effects.lens.minZoomTier}`,
+            reason: "因缩放层级禁用",
+            detail: `需要 ${GRAPH_THEME.effects.lens.minZoomTier}`,
           }
-        : { enabled: true, available: true, reason: "Ready" };
+        : { enabled: true, available: true, reason: "就绪" };
 
   const temporalEmphasis = !effectsState.temporalEmphasisEnabled
-    ? { enabled: false, available: false, reason: "Disabled by toggle" }
+    ? { enabled: false, available: false, reason: "已被开关禁用" }
     : isLayoutRunning
       ? { enabled: true, available: false, reason: layoutReason }
     : !temporalState?.currentTime
-      ? { enabled: true, available: false, reason: "No temporal focus time" }
+      ? { enabled: true, available: false, reason: "未设置时间聚焦点" }
       : !temporalTierReady
         ? {
             enabled: true,
             available: false,
-            reason: "Disabled by zoom tier",
-            detail: `Requires ${GRAPH_THEME.effects.temporalEmphasis.minZoomTier}`,
+            reason: "因缩放层级禁用",
+            detail: `需要 ${GRAPH_THEME.effects.temporalEmphasis.minZoomTier}`,
           }
-        : { enabled: true, available: true, reason: "Ready" };
+        : { enabled: true, available: true, reason: "就绪" };
 
   const semanticRegions = !effectsState.semanticRegionsEnabled
-    ? { enabled: false, available: false, reason: "Disabled by toggle" }
+    ? { enabled: false, available: false, reason: "已被开关禁用" }
     : isLayoutRunning
       ? { enabled: true, available: false, reason: layoutReason }
     : !regionsTierReady
       ? {
           enabled: true,
           available: false,
-          reason: "Disabled by zoom tier",
-          detail: `Requires ${GRAPH_THEME.effects.semanticRegions.minZoomTier}`,
+          reason: "因缩放层级禁用",
+          detail: `需要 ${GRAPH_THEME.effects.semanticRegions.minZoomTier}`,
         }
       : !analytics?.semanticRegions.ready
         ? {
             enabled: true,
             available: false,
-            reason: analytics?.semanticRegions.reason ?? "Waiting for semantic region summaries",
+            reason: analytics?.semanticRegions.reason ?? "等待语义区域摘要",
           }
         : { enabled: true, available: true, reason: analytics.semanticRegions.reason };
 
   const contours = !effectsState.contoursEnabled
-    ? { enabled: false, available: false, reason: "Disabled by toggle" }
+    ? { enabled: false, available: false, reason: "已被开关禁用" }
     : isLayoutRunning
       ? { enabled: true, available: false, reason: layoutReason }
     : !contoursTierReady
       ? {
           enabled: true,
           available: false,
-          reason: "Disabled by zoom tier",
-          detail: `Requires ${GRAPH_THEME.effects.contours.minZoomTier}`,
+          reason: "因缩放层级禁用",
+          detail: `需要 ${GRAPH_THEME.effects.contours.minZoomTier}`,
         }
       : !analytics?.centrality.ready
         ? {
             enabled: true,
             available: false,
-            reason: analytics?.centrality.reason ?? "Waiting for centrality ranking",
+            reason: analytics?.centrality.reason ?? "等待中心性排名",
           }
         : { enabled: true, available: true, reason: analytics.centrality.reason };
 
   const pathfinding = !effectsState.pathfindingEnabled
-    ? { enabled: false, available: false, reason: "Disabled by toggle" }
+    ? { enabled: false, available: false, reason: "已被开关禁用" }
     : !analytics?.directedPath.ready
       ? {
           enabled: true,
           available: false,
-          reason: analytics?.directedPath.reason ?? "Waiting for a traced path",
+          reason: analytics?.directedPath.reason ?? "等待追踪路径",
         }
       : {
           enabled: true,
           available: true,
           reason: analytics.directedPath.verifiedAgainstActivePath
-            ? "Ready · local path matches traced path"
-            : "Ready · local directed path differs from traced path",
+            ? "就绪 · 本地路径与追踪路径一致"
+            : "就绪 · 本地有向路径与追踪路径不一致",
         };
 
   const communities = !effectsState.communitiesEnabled
-    ? { enabled: false, available: false, reason: "Disabled by toggle" }
+    ? { enabled: false, available: false, reason: "已被开关禁用" }
     : !analytics?.communities.ready
       ? {
           enabled: true,
           available: false,
-          reason: analytics?.communities.reason ?? "Waiting for community summaries",
+          reason: analytics?.communities.reason ?? "等待社区摘要",
         }
       : {
           enabled: true,
           available: true,
           reason: analytics.communities.modularity !== null
-            ? `Ready · modularity ${analytics.communities.modularity.toFixed(3)}`
+            ? `就绪 · 模块度 ${analytics.communities.modularity.toFixed(3)}`
             : analytics.communities.reason,
         };
 
   const centrality = !effectsState.centralityEnabled
-    ? { enabled: false, available: false, reason: "Disabled by toggle" }
+    ? { enabled: false, available: false, reason: "已被开关禁用" }
     : !analytics?.centrality.ready
       ? {
           enabled: true,
           available: false,
-          reason: analytics?.centrality.reason ?? "Waiting for centrality ranking",
+          reason: analytics?.centrality.reason ?? "等待中心性排名",
         }
       : { enabled: true, available: true, reason: analytics.centrality.reason };
 
   const legend = effectsState.legendEnabled
-    ? { enabled: true, available: true, reason: "Panel enabled" }
-    : { enabled: false, available: false, reason: "Disabled by toggle" };
+    ? { enabled: true, available: true, reason: "面板已启用" }
+    : { enabled: false, available: false, reason: "已被开关禁用" };
 
   // #1009: edge labels are immediately available once the graph is loaded —
   // they have no async analytics or zoom-tier dependency.
   const edgeLabels = effectsState.edgeLabelsEnabled
-    ? { enabled: true, available: true, reason: "Ready" }
-    : { enabled: false, available: false, reason: "Disabled by toggle" };
+    ? { enabled: true, available: true, reason: "就绪" }
+    : { enabled: false, available: false, reason: "已被开关禁用" };
 
   const diagnostics = !GRAPH_THEME.effects.diagnostics.enabledInDev
-    ? { enabled: false, available: false, reason: "Disabled in production" }
+    ? { enabled: false, available: false, reason: "生产环境已禁用" }
     : effectsState.diagnosticsEnabled
-      ? { enabled: true, available: true, reason: "Ready" }
-      : { enabled: false, available: false, reason: "Disabled by toggle" };
+      ? { enabled: true, available: true, reason: "就绪" }
+      : { enabled: false, available: false, reason: "已被开关禁用" };
 
   return {
     pathPulse,
@@ -2664,7 +2664,7 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
               letterSpacing: "0.01em",
             }}
           >
-            Fit View
+            适应视图
           </button>
         ) : null}
       </div>

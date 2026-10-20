@@ -40,22 +40,22 @@ export function Sidebar({ onSelectConcept }: SidebarProps) {
         borderBottom: '1px solid rgba(88,166,255,0.15)',
       }}>
         <h2 style={{ fontSize: 18, color: '#c9d1d9', margin: '0 0 4px 0', fontWeight: 600 }}>
-          Ontology & Vocabulary
+          本体与词表
         </h2>
         <p style={{ color: '#8b949e', fontSize: 13, margin: 0 }}>
           {schemes.length
-            ? `${schemes.length} vocabulary scheme${schemes.length > 1 ? 's' : ''}`
-            : 'No vocabularies loaded'}
+            ? `${schemes.length} 个词表方案`
+            : '暂无已加载的词表'}
         </p>
       </div>
 
       {/* Scheme selector */}
       <div style={{ padding: '12px 16px', borderBottom: '1px solid rgba(88,166,255,0.1)' }}>
         {schemesLoading ? (
-          <div style={{ color: '#8b949e', fontSize: 13 }}>Loading schemes…</div>
+          <div style={{ color: '#8b949e', fontSize: 13 }}>方案加载中…</div>
         ) : schemes.length === 0 ? (
           <div style={{ color: '#484f58', fontSize: 13, fontStyle: 'italic' }}>
-            No schemes found. Import a .ttl or .rdf file below.
+            未找到方案。请在下方导入 .ttl 或 .rdf 文件。
           </div>
         ) : (
           <select
@@ -85,13 +85,13 @@ export function Sidebar({ onSelectConcept }: SidebarProps) {
       }}>
         {treeLoading ? (
           <div style={{ padding: 20, color: '#8b949e', fontSize: 13, textAlign: 'center' }}>
-            Loading hierarchy…
+            层级结构加载中…
           </div>
         ) : hierarchy.length === 0 ? (
           <div style={{ padding: 20, color: '#484f58', fontSize: 13, textAlign: 'center', fontStyle: 'italic' }}>
             {selectedSchemeUri
-              ? 'No concepts found in this scheme.'
-              : 'Select a scheme to browse concepts.'}
+              ? '该方案中暂无概念。'
+              : '请选择方案以浏览概念。'}
           </div>
         ) : (
           <div style={{ flex: 1, overflow: 'hidden' }}>

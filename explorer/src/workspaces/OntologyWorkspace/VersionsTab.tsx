@@ -57,12 +57,12 @@ export function VersionsTab() {
       if (response.ok) {
         const data = await response.json();
         setVersions(data);
-        if (response.status === 207) setError(data.message || "Warning: Partial success loading versions.");
+        if (response.status === 207) setError(data.message || "警告：加载版本部分成功。");
       } else {
-        setError(`Failed to load versions (${response.status})`);
+        setError(`加载版本失败（${response.status}）`);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to load versions.");
+      setError(err instanceof Error ? err.message : "加载版本失败。");
     }
   }, [ontologyUri]);
 
@@ -73,12 +73,12 @@ export function VersionsTab() {
       if (response.ok) {
         const data = await response.json();
         setProposals(data);
-        if (response.status === 207) setError(data.message || "Warning: Partial success loading proposals.");
+        if (response.status === 207) setError(data.message || "警告：加载提案部分成功。");
       } else {
-        setError(`Failed to load proposals (${response.status})`);
+        setError(`加载提案失败（${response.status}）`);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to load proposals.");
+      setError(err instanceof Error ? err.message : "加载提案失败。");
     }
   }, []);
 
@@ -92,13 +92,13 @@ export function VersionsTab() {
           const propData = await propRes.json();
           if (!ignore) {
             setProposals(propData);
-            if (propRes.status === 207) setError(propData.message || "Warning: Partial success loading proposals.");
+            if (propRes.status === 207) setError(propData.message || "警告：加载提案部分成功。");
           }
         } else if (!ignore) {
           setError(`Failed to load proposals (${propRes.status})`);
         }
       } catch (err) {
-        if (!ignore) setError(err instanceof Error ? err.message : "Failed to load proposals.");
+        if (!ignore) setError(err instanceof Error ? err.message : "加载提案失败。");
       }
 
       if (!ontologyUri) return;
@@ -108,13 +108,13 @@ export function VersionsTab() {
           const verData = await verRes.json();
           if (!ignore) {
             setVersions(verData);
-            if (verRes.status === 207) setError(verData.message || "Warning: Partial success loading versions.");
+            if (verRes.status === 207) setError(verData.message || "警告：加载版本部分成功。");
           }
         } else if (!ignore) {
-          setError((prev) => prev || `Failed to load versions (${verRes.status})`);
+          setError((prev) => prev || `加载版本失败（${verRes.status}）`);
         }
       } catch (err) {
-        if (!ignore) setError((prev) => prev || (err instanceof Error ? err.message : "Failed to load versions."));
+        if (!ignore) setError((prev) => prev || (err instanceof Error ? err.message : "加载版本失败。"));
       }
     }
     void fetchInitial();
@@ -130,16 +130,16 @@ export function VersionsTab() {
       if (response.ok) {
         if (response.status === 207) {
           const data = await response.json().catch(() => ({}));
-          setError(data.message || "Warning: Partial success approving proposal.");
+          setError(data.message || "警告：通过提案部分成功。");
         } else {
-          alert("Proposal approved");
+          alert("提案已通过");
         }
         loadProposals();
       } else {
-        setError(`Failed to approve proposal (${response.status})`);
+        setError(`通过提案失败（${response.status}）`);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to approve proposal.");
+      setError(err instanceof Error ? err.message : "通过提案失败。");
     }
   }, [loadProposals]);
 
@@ -152,16 +152,16 @@ export function VersionsTab() {
       if (response.ok) {
         if (response.status === 207) {
           const data = await response.json().catch(() => ({}));
-          setError(data.message || "Warning: Partial success rejecting proposal.");
+          setError(data.message || "警告：驳回提案部分成功。");
         } else {
-          alert("Proposal rejected");
+          alert("提案已驳回");
         }
         loadProposals();
       } else {
-        setError(`Failed to reject proposal (${response.status})`);
+        setError(`驳回提案失败（${response.status}）`);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to reject proposal.");
+      setError(err instanceof Error ? err.message : "驳回提案失败。");
     }
   }, [loadProposals]);
 
@@ -174,17 +174,17 @@ export function VersionsTab() {
       if (response.ok) {
         if (response.status === 207) {
           const data = await response.json().catch(() => ({}));
-          setError(data.message || "Warning: Partial success publishing proposal.");
+          setError(data.message || "警告：发布提案部分成功。");
         } else {
-          alert("Proposal published");
+          alert("提案已发布");
         }
         loadProposals();
         loadVersions();
       } else {
-        setError(`Failed to publish proposal (${response.status})`);
+        setError(`发布提案失败（${response.status}）`);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to publish proposal.");
+      setError(err instanceof Error ? err.message : "发布提案失败。");
     }
   }, [loadProposals, loadVersions]);
 
@@ -203,13 +203,13 @@ export function VersionsTab() {
       });
       if (response.ok) {
         const data = await response.json();
-        if (response.status === 207) setError(data.message || "Warning: Partial success comparing versions.");
+        if (response.status === 207) setError(data.message || "警告：比较版本部分成功。");
         setCompareResult(data);
       } else {
-        setError(`Failed to compare versions (${response.status})`);
+        setError(`比较版本失败（${response.status}）`);
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to compare versions.");
+      setError(err instanceof Error ? err.message : "比较版本失败。");
     } finally {
       setIsLoading(false);
     }
@@ -337,10 +337,10 @@ export function VersionsTab() {
   return (
     <div style={containerStyle}>
       <div style={headerStyle}>
-        <h1 style={titleStyle}>Versions & Change Proposals</h1>
+        <h1 style={titleStyle}>版本与变更提案</h1>
         <input
           type="text"
-          placeholder="Ontology URI"
+          placeholder="本体 URI"
           value={ontologyUri}
           onChange={(e) => setOntologyUri(e.target.value)}
           style={{ ...inputStyle, width: "300px", marginBottom: 0 }}
@@ -352,11 +352,11 @@ export function VersionsTab() {
       <div style={sectionStyle}>
         <h2 style={sectionTitleStyle}>
           <Layers size={16} />
-          Version History
+          版本历史
         </h2>
         <div style={listStyle}>
           {versions.length === 0 ? (
-            <div style={{ color: "#8fa8c6", fontSize: "13px" }}>No versions found</div>
+            <div style={{ color: "#8fa8c6", fontSize: "13px" }}>暂无版本</div>
           ) : (
             versions.map((version) => (
               <div key={version.version_id} style={itemStyle}>
@@ -377,7 +377,7 @@ export function VersionsTab() {
                   }}
                 >
                   <ArrowRight size={12} />
-                  Compare
+                  比较
                 </button>
               </div>
             ))
@@ -388,11 +388,11 @@ export function VersionsTab() {
       <div style={sectionStyle}>
         <h2 style={sectionTitleStyle}>
           <GitMerge size={16} />
-          Change Proposals
+          变更提案
         </h2>
         <div style={listStyle}>
           {proposals.length === 0 ? (
-            <div style={{ color: "#8fa8c6", fontSize: "13px" }}>No proposals found</div>
+            <div style={{ color: "#8fa8c6", fontSize: "13px" }}>暂无提案</div>
           ) : (
             proposals.map((proposal) => (
               <div key={proposal.proposal_id} style={itemStyle}>
@@ -409,18 +409,18 @@ export function VersionsTab() {
                   <div style={{ display: "flex", gap: "6px" }}>
                     <button style={buttonStyle} onClick={() => approveProposal(proposal.proposal_id)}>
                       <CheckCircle size={12} />
-                      Approve
+                      通过
                     </button>
                     <button style={buttonStyle} onClick={() => rejectProposal(proposal.proposal_id)}>
                       <XCircle size={12} />
-                      Reject
+                      驳回
                     </button>
                   </div>
                 )}
                 {proposal.state === "approved" && (
                   <button style={buttonStyle} onClick={() => publishProposal(proposal.proposal_id)}>
                     <Send size={12} />
-                    Publish
+                    发布
                   </button>
                 )}
                 <button
@@ -431,7 +431,7 @@ export function VersionsTab() {
                   }}
                 >
                   <FileText size={12} />
-                  Details
+                  详情
                 </button>
               </div>
             ))
@@ -443,20 +443,20 @@ export function VersionsTab() {
         <div style={modalOverlayStyle} onClick={() => setShowProposalModal(false)}>
           <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "16px" }}>
-              <h3 style={{ margin: 0, color: "#ebf3ff", fontSize: "16px" }}>Proposal Details</h3>
+              <h3 style={{ margin: 0, color: "#ebf3ff", fontSize: "16px" }}>提案详情</h3>
               <button onClick={() => setShowProposalModal(false)} style={{ background: "none", border: "none", color: "#8fa8c6", cursor: "pointer" }}>
                 <X size={18} />
               </button>
             </div>
             <div style={{ marginBottom: "12px" }}>
               <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
-                Summary
+                摘要
               </label>
               <div style={{ color: "#ebf3ff", fontSize: "13px" }}>{selectedProposal.summary}</div>
             </div>
             <div style={{ marginBottom: "12px" }}>
               <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
-                State
+                状态
               </label>
               <div style={{ display: "flex", alignItems: "center", gap: "6px", color: "#ebf3ff", fontSize: "13px" }}>
                 {getStateIcon(selectedProposal.state)}
@@ -465,7 +465,7 @@ export function VersionsTab() {
             </div>
             <div style={{ marginBottom: "12px" }}>
               <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
-                Impact Analysis
+                影响分析
               </label>
               <pre style={{ background: "rgba(3, 9, 18, 0.8)", padding: "12px", borderRadius: "6px", color: "#ebf3ff", fontSize: "12px", overflow: "auto" }}>
                 {JSON.stringify(selectedProposal.impact_analysis, null, 2)}
@@ -473,7 +473,7 @@ export function VersionsTab() {
             </div>
             <div style={{ marginBottom: "12px" }}>
               <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
-                SHACL Validation
+                SHACL 校验
               </label>
               <pre style={{ background: "rgba(3, 9, 18, 0.8)", padding: "12px", borderRadius: "6px", color: "#ebf3ff", fontSize: "12px", overflow: "auto" }}>
                 {JSON.stringify(selectedProposal.shacl_validation, null, 2)}
@@ -481,7 +481,7 @@ export function VersionsTab() {
             </div>
             <div>
               <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
-                Comments ({selectedProposal.comments.length})
+                评论（{selectedProposal.comments.length}）
               </label>
               <div style={{ maxHeight: "120px", overflow: "auto" }}>
                 {selectedProposal.comments.map((comment) => (
@@ -500,7 +500,7 @@ export function VersionsTab() {
         <div style={modalOverlayStyle} onClick={() => setShowCompareModal(false)}>
           <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "16px" }}>
-              <h3 style={{ margin: 0, color: "#ebf3ff", fontSize: "16px" }}>Compare Versions</h3>
+              <h3 style={{ margin: 0, color: "#ebf3ff", fontSize: "16px" }}>比较版本</h3>
               <button onClick={() => setShowCompareModal(false)} style={{ background: "none", border: "none", color: "#8fa8c6", cursor: "pointer" }}>
                 <X size={18} />
               </button>
@@ -508,7 +508,7 @@ export function VersionsTab() {
             <div style={{ display: "flex", gap: "12px", marginBottom: "16px" }}>
               <div style={{ flex: 1 }}>
                 <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
-                  Version 1
+                  版本 1
                 </label>
                 <input
                   type="text"
@@ -519,7 +519,7 @@ export function VersionsTab() {
               </div>
               <div style={{ flex: 1 }}>
                 <label style={{ display: "block", color: "#8fa8c6", fontSize: "12px", marginBottom: "4px" }}>
-                  Version 2
+                  版本 2
                 </label>
                 <input
                   type="text"
@@ -531,7 +531,7 @@ export function VersionsTab() {
             </div>
             <button style={buttonStyle} onClick={runVersionComparison} disabled={isLoading}>
               <Scale size={12} />
-              {isLoading ? "Comparing..." : "Compare"}
+              {isLoading ? "比较中…" : "比较"}
             </button>
             {compareResult && (
               <pre style={{ marginTop: "16px", background: "rgba(3, 9, 18, 0.8)", padding: "12px", borderRadius: "6px", color: "#ebf3ff", fontSize: "12px", overflow: "auto" }}>
